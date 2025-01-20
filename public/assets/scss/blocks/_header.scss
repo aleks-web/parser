@@ -1,0 +1,14 @@
+.header {
+  &__container {
+    display: flex;
+  }
+
+  // Ссылка в шапке
+  &__contact-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 20px;
+  }
+}

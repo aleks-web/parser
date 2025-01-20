@@ -1,0 +1,34 @@
+networks:
+    parser-network:
+        driver: bridge
+        name: parser_network
+
+services:
+    parser_nginx:
+        container_name: parser_nginx
+        build:
+            context: ./
+            dockerfile: docker/nginx/Dockerfile
+        volumes:
+            - ./:/var/www/html
+            - ./docker/nginx/conf.d:/etc/nginx/conf.d
+        ports:
+            - "81:80"
+        expose:
+            -   81
+        networks:
+            - parser-network
+        depends_on:
+            site: { condition: service_started }
+
+    site:
+        container_name: site
+        build:
+            context: ./
+            dockerfile: ./docker/php-fpm/Dockerfile
+        networks:
+            - parser-network
+        volumes:
+            - ./:/var/www/html
+        extra_hosts:
+            - "host.docker.internal:host-gateway"
