@@ -7,7 +7,8 @@ export default {
       padding: {
         DEFAULT: '1rem',
         sm: '0.8rem',
-        md: '0.9rem'
+        md: '0.9rem',
+        xl: '2rem'
       },
     },
     extend: {
@@ -21,8 +22,8 @@ export default {
         'sm': '576px',
         'md': '768px',
         'lg': '1024px',
-        'xl': '1280px',
-        '2xl': '1536px',
+        'xl': '1536px',
+        '2xl': '1920px',
       },
     }
   },

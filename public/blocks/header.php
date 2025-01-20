@@ -38,7 +38,7 @@
     </div>
 </div>
 
-<div class="my-6">
+<div class="my-4 sm:my-6 xl:my-10">
     <div class="container">
         <div class="flex justify-between gap-4
                     md:gap-10
@@ -52,7 +52,8 @@
 
                 <div class="flex justify-end items-center gap-6 w-full text-sm
                             md:justify-start md:text-md
-                            lg:text-lg">
+                            lg:text-lg
+                            xl:gap-26">
                     <a href="#" class="flex items-center gap-3">
                         <svg class="w-6 h-6"><use xlink:href="#svg-whatsapp"></use></svg>
                         <span class="hidden sm:block">Написать в WhatsApp</span>
@@ -72,9 +73,10 @@
                 </div>
 
                 <div class="hidden md:flex">
-                    <ul class="flex gap-4 font-bold text-sm uppercase -ml-2 -mb-3 lg:gap-16 xl:gap-20">
+                    <ul class="flex gap-4 font-bold text-sm uppercase -ml-2 -mb-3 lg:gap-16 xl:gap-32">
                         <?php $linkClass = 'block hover:text-gray-600 hover:border-gray-600 border border-transparent transition-all ease-in delay-100 text-gray-600 rounded-lg min-w-max p-2
-                                            lg:text-lg lg:rounded-xl'; ?>
+                                            lg:text-lg lg:rounded-xl
+                                            xl:text-xl'; ?>
 
                         <li><a href="#" class="<?= $linkClass ?>">Цены</a></li>
                         <li><a href="#" class="<?= $linkClass ?>">Заказать прайсинг</a></li>

@@ -52,14 +52,14 @@
             background-color: darkred;
         }
     }
-    @media (min-width: 1280px) {
+    @media (min-width: 1536px) {
         .verstka:before {
             content: 'xl';
             color: white;
             background-color: blue;
         }
     }
-    @media (min-width: 1536px) {
+    @media (min-width: 1920px) {
         .verstka:before {
             content: '2xl';
             color: white;
