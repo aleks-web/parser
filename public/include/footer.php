@@ -1,6 +1,25 @@
 <?php include "svg.php"; ?>
 
 
+<div class="footer py-16 bg-[#292929] text-[white] font-bold text-[20px]">
+    <div class="container">
+        <ul class="flex flex-col uppercase gap-4 sm:grid sm:grid-cols-2 md:flex md:flex-row md:justify-center md:gap-20 lg:gap-32 xl:gap-44">
+            <li><a href="#">Цены</a></li>
+            <li>
+                <a href="#" class="flex gap-6 justify-start items-center md:inline">
+                    <span>Заказать парсинг</span>
+                    <svg class="w-4 h-4 md:hidden"><use xlink:href="#svg-white-arrow"></use></svg>
+                </a>
+            </li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Кейсы и отзывы</a></li>
+        </ul>
+
+        <div class="text-[#656565] mt-10 text-center">parsing-data.ru | 2019-2025</div>
+    </div>
+</div>
+
+
 <!-- Start Удалить по окончанию  -->
 <div class="verstka"></div>
 <style>
