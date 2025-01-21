@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./public/**/*.{php,js}"],
+  content: ["./public/blocks/*.php", "./public/include/*.php"],
   theme: {
     container: {
       center: true,
@@ -23,7 +23,7 @@ export default {
         'md': '768px',
         'lg': '1024px',
         'xl': '1536px',
-        '2xl': '1920px',
+        '2xl': '1836px',
       },
     }
   },

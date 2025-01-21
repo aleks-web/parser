@@ -4,6 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+        <script src="./assets/js/main.js"></script>
+
         <link href="./assets/fonts/Roboto/stylesheet.css" rel="stylesheet">
         <link href="./assets/css/main.css" rel="stylesheet">
         <link href="./assets/css/output.css" rel="stylesheet">
@@ -15,6 +18,7 @@
 
         <?php include dirname(__FILE__) . '/blocks/header.php'; ?>
         <?php include dirname(__FILE__) . '/blocks/main-banner.php'; ?>
+        <?php include dirname(__FILE__) . '/blocks/what-data-collect.php'; ?>
 
 
         <?php include dirname(__FILE__) . '/include/footer.php'; ?>

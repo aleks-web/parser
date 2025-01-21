@@ -1,43 +1,3 @@
-<div style="display: none;">
-    <div class="container flex gap-x-36">
-        <div>
-            <img class="min-w-36" src="/assets/img/logo.svg" alt="logo">
-        </div>
-
-        <div class="flex justify-between flex-col w-full">
-            <div class="flex gap-10">
-
-                <a href="#" class="flex gap-4 items-center justify-center">
-                    <img class="-mt-1" width="17" height="17" src="/assets/img/icons/phone.svg" alt="logo">
-                    <span class="text-base font-bold text-gray-600">+7 (925) 511-01-94</span>
-                </a>
-
-                <a href="#"  class="flex gap-4 items-center justify-center">
-                    <img class="-mt-1" width="17" height="17" src="/assets/img/icons/whatsapp.svg" alt="logo">
-                    <span class="text-base font-bold text-gray-600">+7 (925) 511-01-94</span>
-                </a>
-
-                <a href="#"  class="flex gap-4 items-center justify-center">
-                    <img class="-mt-1" width="17" height="17" src="/assets/img/icons/email.svg" alt="logo">
-                    <span class="text-base font-bold text-gray-600">+7 (925) 511-01-94</span>
-                </a>
-
-            </div>
-
-            <div class="flex">
-                <ul class="flex gap-20 font-bold text-lg uppercase leading-normal">
-                    <?php $linkClass = 'hover:text-gray-600 hover:border-gray-600 border border-transparent transition-all ease-in delay-100 text-gray-600 py-3 px-10 -ml-10 rounded-xl'; ?>
-                    <li><a href="#" class="<?= $linkClass ?>">Цены</a></li>
-                    <li><a href="#" class="<?= $linkClass ?>">Заказать прайсинг</a></li>
-                    <li><a href="#" class="<?= $linkClass ?>">О нас</a></li>
-                    <li><a href="#" class="<?= $linkClass ?>">Кейсы и отзывы</a></li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
-</div>
-
 <div class="my-4 sm:my-6 xl:my-10">
     <div class="container">
         <div class="flex justify-between gap-4
@@ -54,18 +14,9 @@
                             md:justify-start md:text-md
                             lg:text-lg
                             xl:gap-26">
-                    <a href="#" class="flex items-center gap-3">
-                        <svg class="w-6 h-6"><use xlink:href="#svg-whatsapp"></use></svg>
-                        <span class="hidden sm:block">Написать в WhatsApp</span>
-                    </a>
-                    <a href="#" class="flex items-center gap-3">
-                        <svg class="w-6 h-6"><use xlink:href="#svg-phone"></use></svg>
-                        <span class="hidden sm:block">+7 (925) 511-01-94</span>
-                    </a>
-                    <a href="#" class="flex items-center gap-3">
-                        <svg class="w-6 h-6"><use xlink:href="#svg-email"></use></svg>
-                        <span class="hidden md:block">ak@gmtorg.ru</span>
-                    </a>
+                    <?php theContactLink('#', 'Написать в WhatsApp', 'svg-whatsapp') ?>
+                    <?php theContactLink('#', '+7 (925) 511-01-94', 'svg-phone') ?>
+                    <?php theContactLink('#', 'ak@gmtorg.ru', 'svg-email') ?>
 
                     <a href="#" class="flex items-center gap-3 md:hidden">
                         <svg class="w-6 h-6"><use xlink:href="#svg-mobile-menu"></use></svg>
@@ -89,4 +40,9 @@
     </div>
 </div>
 
-<?php ?>
+<?php function theContactLink($href, $text, $svgIconId) { ?>
+    <a href="<?= $href ?>" class="flex items-center gap-3">
+        <svg class="w-6 h-6"><use xlink:href="#<?= $svgIconId ?>"></use></svg>
+        <span class="hidden md:block"><?= $text ?></span>
+    </a>
+<?php } ?>

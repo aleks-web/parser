@@ -1,3 +1,7 @@
+:root {
+    --main-clr: #1450D0;
+}
+
 @tailwind base;
 
 @layer base {
@@ -5,6 +9,29 @@
         @apply bg-[#F2F6FF];
         @apply font-sans;
     }
+}
+
+.title-blue {
+    @apply
+    bg-[--main-clr] max-w-max px-5 py-2 text-gray-50 text-[22px] italic font-bold uppercase rounded-[20px]
+    md:text-[25px]
+    lg:text-[34px]
+    xl:text-[44px];
+}
+
+.title-white {
+    @apply
+    bg-[white] max-w-max px-5 py-2 text-gray-600 text-[22px] italic font-bold uppercase rounded-[20px]
+    md:text-[25px]
+    lg:text-[34px]
+    xl:text-[44px];
+}
+
+/*
+    Block what-data-collect
+*/
+.what-data-collect-tab {
+
 }
 
 @tailwind components;
