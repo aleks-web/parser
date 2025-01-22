@@ -17,9 +17,12 @@
     <body>
 
 
-        <?php // include dirname(__FILE__) . '/blocks/header.php'; ?>
-        <?php // include dirname(__FILE__) . '/blocks/main-banner.php'; ?>
-        <?php // include dirname(__FILE__) . '/blocks/what-data-collect.php'; ?>
+        <?php include dirname(__FILE__) . '/blocks/price-utp.php'; ?>
+
+        <?php // include dirname(__FILE__) . '/blocks/faq.php'; ?>
+        <?php //include dirname(__FILE__) . '/blocks/header.php'; ?>
+        <?php //include dirname(__FILE__) . '/blocks/main-banner.php'; ?>
+        <?php //include dirname(__FILE__) . '/blocks/what-data-collect.php'; ?>
 
 
 

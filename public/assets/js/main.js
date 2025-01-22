@@ -15,10 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
    // const observer = new MutationObserver((e) => { console.log(e); });
    // observer.observe(document.querySelector('.what-data-collect-content-wrapper'), { attributes: true, childList: true, subtree: true });
 
-
-
-   getActiveContentNode().parentNode
-
    function removeActiveClassOnCurrentTab() { // Чистим активные классы
       whatDataCollectTabs.forEach(el => {
          el.classList.remove('active');
@@ -103,4 +99,49 @@ document.addEventListener('DOMContentLoaded', () => {
       });
 
    })
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+   let accordions = document.querySelectorAll(".accordion");
+
+   accordions.forEach(accord => {
+      let title = accord.querySelector(".accordion__title");
+      title.addEventListener('click', (title) => {
+         toggleAccordion(accord);
+      });
+
+
+
+      function toggleAccordion(accord) {
+
+         function getContentByAccordNode(node) {
+            return node.querySelector(".accordion__content");
+         }
+
+         accordions.forEach((el, i, arr) => {
+
+            if (accord !== el) {
+               gsap.to(getContentByAccordNode(el), {
+                  onStart: () => {
+                    el.classList.remove('open');
+                  },
+                  height: 0,
+               });
+            }
+
+            if (arr.length - 1 === i) {
+               gsap.to(getContentByAccordNode(accord), {
+                  onStart: () => {
+                     accord.classList.add('open');
+                  },
+                  height: 'auto',
+               });
+            }
+         });
+      }
+   });
+
 });

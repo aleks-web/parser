@@ -3,14 +3,14 @@
         <div class="flex justify-between gap-4
                     md:gap-10
                     lg:gap-16">
-            <div>
-                <img class="w-14 items-center md:w-24 lg:w-32" src="/assets/img/logo.svg" alt="logo">
+            <div class="flex items-center justify-center">
+                <img class="w-[12svw] items-center md:w-24 lg:w-32 aspect-square" src="/assets/img/logo.svg" alt="logo">
             </div>
 
             <div class="flex flex-col justify-center w-full
                         md:justify-between">
 
-                <div class="flex justify-end items-center gap-6 w-full text-sm
+                <div class="flex justify-end items-center gap-4 w-full text-sm
                             md:justify-start md:text-md
                             lg:text-lg
                             xl:gap-26">
@@ -42,7 +42,7 @@
 
 <?php function theContactLink($href, $text, $svgIconId) { ?>
     <a href="<?= $href ?>" class="flex items-center gap-3">
-        <svg class="w-6 h-6"><use xlink:href="#<?= $svgIconId ?>"></use></svg>
+        <svg class="w-[8svw] aspect-square"><use xlink:href="#<?= $svgIconId ?>"></use></svg>
         <span class="hidden md:block"><?= $text ?></span>
     </a>
 <?php } ?>

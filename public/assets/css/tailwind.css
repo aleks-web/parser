@@ -1,5 +1,6 @@
 :root {
     --main-clr: #1450D0;
+    --clr-2: #E9F0FF;
 }
 
 @tailwind base;
@@ -13,18 +14,22 @@
 
 .title-blue {
     @apply
-    bg-[--main-clr] max-w-max px-5 py-2 text-gray-50 text-[22px] italic font-bold uppercase rounded-[20px]
+    bg-[--main-clr] max-w-max px-5 py-1 text-gray-50 text-[22px] italic font-bold uppercase rounded-[20px] break-all leading-10 block
+    sm:inline-block
     md:text-[25px]
-    lg:text-[34px]
-    xl:text-[44px];
+    lg:text-[34px] lg:py-2
+    xl:text-[44px] xl:py-4
+    2xl:px-8;
 }
 
 .title-white {
     @apply
-    bg-[white] max-w-max px-5 py-2 text-gray-600 text-[22px] italic font-bold uppercase rounded-[20px]
+    bg-[white] max-w-max px-5 py-1 text-gray-600 text-[22px] italic font-bold uppercase rounded-[20px] break-all leading-10 block
+    sm:inline-block
     md:text-[25px]
-    lg:text-[34px]
-    xl:text-[44px];
+    lg:text-[34px] lg:py-2
+    xl:text-[44px] xl:py-4
+    2xl:px-8;
 }
 
 /*

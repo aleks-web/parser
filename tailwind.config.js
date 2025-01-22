@@ -5,7 +5,8 @@ export default {
     container: {
       center: true,
       padding: {
-        DEFAULT: '1rem',
+        DEFAULT: '0.5rem',
+        s: '0.5rem',
         sm: '0.8rem',
         md: '0.9rem',
         xl: '2rem'
@@ -19,6 +20,7 @@ export default {
         sans: ['Roboto', 'sans-serif'],
       },
       screens: {
+        's': '320px',
         'sm': '576px',
         'md': '768px',
         'lg': '1024px',
