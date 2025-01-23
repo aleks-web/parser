@@ -16,6 +16,5 @@
     </div>
 </div>
 
-
 <?php includeInc('svg'); ?>
 <?php includeInc('helper'); ?>

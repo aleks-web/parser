@@ -13,9 +13,9 @@ services:
             - ./:/var/www/html
             - ./docker/nginx/conf.d:/etc/nginx/conf.d
         ports:
-            - "81:80"
+            - "82:80"
         expose:
-            -   81
+            -   82
         networks:
             - parser-network
         depends_on:

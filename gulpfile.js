@@ -26,22 +26,27 @@ export function sass() {
         .pipe(browserSync.stream())
 }
 
+export function css() {
+    return gulp.src([`${dir.appCss}/output.css`])
+        .pipe(browserSync.stream())
+}
+
 function php() {
     return gulp.src(folderDist + '/**/*.php')
         .pipe(browserSync.stream())
 }
 
 export function watching() {
-    gulp.watch([`${dir.appScss}/**/*.scss`], sass);
-    gulp.watch([`${folderDist}/**/*.php`, `${folderDist}/**/blocks/*.php`], php);
+    gulp.watch([`${dir.appScss}/public/assets/css/output.css`], css);
+    gulp.watch([`${folderDist}/**/*.php`, `${folderDist}/**/blocks/*.php`, `${folderDist}/**/include/*.php`], php);
 }
 
 
 export function browsersync() {
     browserSync.init({
         notify: false,
-        proxy: "localhost:81",
+        proxy: "localhost:82",
     });
 }
 
-export default gulp.parallel(browsersync, sass, php, watching);
+export default gulp.parallel(browsersync, css, php, watching);
