@@ -14,7 +14,7 @@ function includeInc($incFileName) {
     include SITE_PATH . "/include/" . $incFileName . ".php";
 }
 
-define('PAGES_LIST', ['price', 'order-parsing', 'index', 'about-us', 'cases']);
+define('PAGES_LIST', ['price', 'order-parsing', 'main', 'about-us', 'cases']);
 
 function getCurrenPage() {
     foreach (PAGES_LIST as $key => $page) {
@@ -23,6 +23,46 @@ function getCurrenPage() {
         if ($res) { return $page; }
     }
 
-    return 'index';
+    return 'main';
+}
+
+function getTitle() {
+    switch (getCurrenPage()) {
+        case 'main':
+            return 'Парсинг';
+            break;
+        case 'price':
+            return 'Цены';
+            break;
+        case 'order-parsing':
+            return 'Заказ парсинга';
+            break;
+        case 'about-us':
+            return 'О нас';
+            break;
+        case 'cases':
+            return 'Кейсы и отзывы';
+            break;
+    }
+}
+
+function getDescription() {
+    switch (getCurrenPage()) {
+        case 'main':
+            return 'Парсинг';
+            break;
+        case 'price':
+            return 'Цены';
+            break;
+        case 'order-parsing':
+            return 'Заказ парсинга';
+            break;
+        case 'about-us':
+            return 'О нас';
+            break;
+        case 'cases':
+            return 'Кейсы и отзывы';
+            break;
+    }
 }
 ?>

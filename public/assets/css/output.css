@@ -1814,12 +1814,57 @@ body {
   background-color: var(--clr-2);
 }
 
+.group\/red.active .group-\[\.active\]\/red\:bg-\[red\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
+}
+
 .group\/accordion.open .group-\[\.open\]\/accordion\:text-\[--main-clr\] {
   color: var(--main-clr);
 }
 
+.group.active .group-\[\.active\]\:text-\[red\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity, 1));
+}
+
+.group.active .group-\[\.active\]\/\:text-\[red\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity, 1));
+}
+
+.group\/red.active .group-\[\.active\]\/red\:text-\[red\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity, 1));
+}
+
 .peer:checked ~ .peer-checked\:ml-auto {
   margin-left: auto;
+}
+
+.peer:hover ~ .peer-hover\:bg-\[red\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.peer:hover ~ .peer-hover\:text-\[red\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity, 1));
+}
+
+.peer\/s:hover ~ .peer-hover\/s\:text-\[red\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity, 1));
+}
+
+.peer\/red.active ~ .peer-\[\.active\]\/red\:bg-\[red\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.peer.active ~ .peer-\[\.active\]\:bg-\[red\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .has-\[input\:checked\]\:justify-end:has(input:checked) {

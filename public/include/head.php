@@ -14,4 +14,6 @@
 <link href="<?= ASSETS_URL ?>/css/main.css" rel="stylesheet">
 <link href="<?= ASSETS_URL ?>/css/output.css" rel="stylesheet">
 
-<title>Main page</title>
+<title><?= getTitle() ?></title>
+
+<meta name="description" content="<?= getDescription() ?>">

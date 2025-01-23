@@ -31,7 +31,8 @@
                     <ul class="flex gap-4 font-bold text-sm uppercase -ml-2 -mb-3 lg:gap-16 xl:gap-32">
                         <?php $linkClass = 'block hover:text-gray-600 hover:border-gray-600 border border-transparent transition-all ease-in delay-100 text-gray-600 rounded-lg min-w-max p-2
                                             lg:text-lg lg:rounded-xl
-                                            xl:text-xl'; ?>
+                                            xl:text-xl
+                                            '; ?>
 
                         <li><a href="/pages/price/index.php" class="<?= $linkClass ?> <?= getCurrenPage() === 'price' ? 'active' : ''; ?>">Цены</a></li>
                         <li><a href="/pages/order-parsing/index.php" class="<?= $linkClass ?> <?= getCurrenPage() === 'order-parsing' ? 'active' : ''; ?>">Заказать прайсинг</a></li>
