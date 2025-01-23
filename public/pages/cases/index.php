@@ -11,7 +11,7 @@
 
         <?php includeBlock('header'); ?>
 
-        <?php includeBlock('price-utp'); ?>
+        Кейсы
 
         <?php includeInc('footer'); ?>
     </body>

@@ -11,7 +11,9 @@
 
         <?php includeBlock('header'); ?>
 
-        <?php includeBlock('price-utp'); ?>
+        <div class="sm:container px-[0.5rem">
+            ads
+        </div>
 
         <?php includeInc('footer'); ?>
     </body>

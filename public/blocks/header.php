@@ -5,7 +5,9 @@
                     md:gap-10
                     lg:gap-16">
             <div class="flex items-center justify-center">
-                <img class="w-[12svw] min-w-6 items-center aspect-square s:min-w-10 md:w-24 lg:w-32" src="/assets/img/logo.svg" alt="logo">
+                <a href="/">
+                    <img class="w-[12svw] min-w-6 items-center aspect-square s:min-w-10 md:w-24 lg:w-32" src="/assets/img/logo.svg" alt="logo">
+                </a>
             </div>
 
             <div class="flex flex-col justify-center w-full
@@ -31,10 +33,10 @@
                                             lg:text-lg lg:rounded-xl
                                             xl:text-xl'; ?>
 
-                        <li><a href="#" class="<?= $linkClass ?>">Цены</a></li>
-                        <li><a href="#" class="<?= $linkClass ?>">Заказать прайсинг</a></li>
-                        <li><a href="#" class="<?= $linkClass ?>">О нас</a></li>
-                        <li><a href="#" class="<?= $linkClass ?>">Кейсы и отзывы</a></li>
+                        <li><a href="/pages/price/index.php" class="<?= $linkClass ?> <?= getCurrenPage() === 'price' ? 'active' : ''; ?>">Цены</a></li>
+                        <li><a href="/pages/order-parsing/index.php" class="<?= $linkClass ?> <?= getCurrenPage() === 'order-parsing' ? 'active' : ''; ?>">Заказать прайсинг</a></li>
+                        <li><a href="/pages/about-us/index.php" class="<?= $linkClass ?> <?= getCurrenPage() === 'about-us' ? 'active' : ''; ?>">О нас</a></li>
+                        <li><a href="/pages/cases/index.php" class="<?= $linkClass ?> <?= getCurrenPage() === 'cases' ? 'active' : ''; ?>">Кейсы и отзывы</a></li>
                     </ul>
                 </div>
             </div>

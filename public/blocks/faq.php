@@ -1,4 +1,4 @@
-<div class="container my-20">
+<div class="sm:container px-[0.5rem] my-20">
     <h2>
         <span class="title-white">Часто задаваемые</span>
         <span class="title-blue">вопросы</span>

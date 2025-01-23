@@ -1,5 +1,3 @@
-<?php include "form.php" ?>
-
 <div class="md:container my-10 mx-[0.5rem]">
     <div class="bg-white p-3 rounded-2xl">
         <div class="flex flex-col text-center gap-4 text-[16px] text-[#5A575F] items-center max-w-[1200px] mb-2

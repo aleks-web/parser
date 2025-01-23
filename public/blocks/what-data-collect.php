@@ -54,8 +54,7 @@
 <?php function getDataCollectTab($text, $icon, $key = null) { ?>
 <div>
     <div data-id="<?= $key ?>"  class="what-data-collect-tab
-                                       cursor-pointer
-                                       flex items-center gap-3 uppercase font-bold text-gray-600 rounded-[16px] p-1 border border-transparent transition-all delay-100 ease-in
+                                       cursor-pointer flex items-center gap-3 uppercase font-bold text-gray-600 rounded-[16px] p-1 border border-transparent transition-all delay-100 ease-in
                                        2xl:p-2
                                        hover:border hover:border-[#D9D9D9]
                                        <?= !$key ? 'active' : ''; ?>">
@@ -74,7 +73,7 @@
                 xl:mt-0" src="./assets/img/what-data-collect/content-<?= $key ?>.webp" alt="<?= $text ?>">
 <?php } ?>
 
-<div class="what-data-collect container my-10">
+<div class="what-data-collect sm:container px-[0.5rem] my-10">
     <div class="flex flex-wrap">
         <span class="title-white">Какие</span> <span class="title-blue">данные</span> <span class="title-white">мы можем собрать</span>
     </div>

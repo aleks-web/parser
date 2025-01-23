@@ -1422,6 +1422,11 @@ body {
   padding-right: 2.5rem;
 }
 
+.px-\[05rem\] {
+  padding-left: 05rem;
+  padding-right: 05rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }

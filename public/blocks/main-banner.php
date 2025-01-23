@@ -1,5 +1,5 @@
 <div class="relative truncate whitespace-normal">
-    <div class="container mt-10">
+    <div class="sm:container px-[0.5rem] mt-10">
 
         <h1 class="flex flex-wrap">
             <span class="title-blue">Профессионально</span>

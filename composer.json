@@ -1,0 +1,17 @@
+{
+    "name": "alex/parser",
+    "autoload": {
+        "psr-4": {
+            "Alex\\Parser\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alex",
+            "email": "dok.go@yandex.ru"
+        }
+    ],
+    "require-dev": {
+        "symfony/var-dumper": "^7.2"
+    }
+}

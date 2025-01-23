@@ -11,9 +11,11 @@ help: ## Show this help
 	@printf "\033[33m%s:\033[0m\n" 'Available commands'
 	@awk 'BEGIN {FS = ":.*?## "} /^[a-zA-Z0-9_-]+:.*?## / {printf "  \033[32m%-18s\033[0m %s\n", $$1, $$2}' $(MAKEFILE_LIST)
 
+app-shell: ## Start shell into app container
+	UNAME=$(shell whoami) docker-compose exec -it site bash
 
 nginx-shell: ## Start shell into db container
-	UNAME=$(shell whoami) docker-compose exec -it lar_nginx bash
+	UNAME=$(shell whoami) docker-compose exec -it parser_nginx bash
 
 up: ## Start containers
 	COMPOSE_HTTP_TIMEOUT=$(COMPOSE_TIMEOUT) UNAME=$(shell whoami) docker-compose up --detach --remove-orphans parser_nginx site && npx tailwindcss -i ./public/assets/css/tailwind.css -o ./public/assets/css/output.css --watch
