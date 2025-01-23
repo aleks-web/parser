@@ -1,4 +1,4 @@
-<div class="md:container px-[0.5rem] my-10 xl:max-w-[1536px]">
+<div class="md:container my-10 s:px-[0.5rem] xl:max-w-[1536px]">
     <div class="bg-white p-3 rounded-xl sm:p-6 xl:p-10">
         <div class="mb-5 text-center text-[18px] uppercase text-[#1450D0] font-bold italic break-all
                     s:text-[22px]
@@ -8,13 +8,14 @@
                     xl:text-[40px]
                     2xl:text-[44px]">Заполните форму</div>
 
-        <form>
+        <form method="POST">
             <?php
-                $label = "text-[#1450D0] font-bold text-[14px] mb-[5px] block sm:text-[16px]";
+                $label = "text-[#1450D0] font-bold text-[14px] mb-[5px] block sm:text-[16px] xl:text-[18px]";
                 $input = "border border-[#D9D9D9] outline-none py-1 pl-4 rounded-[20px] text-[14px] w-full text-[#1450D0]
                           s:text-[16px]
                           md:py-2
-                          lg:pl-6";
+                          lg:pl-6
+                          xl:text-[20px]";
             ?>
 
             <div class="flex flex-col gap-4 mb-4
@@ -43,37 +44,52 @@
                 </div>
             </div>
 
-            <div class="flex flex-col mt-4">
-                <span class="<?= $label ?>">Какие данные нужно собирать?*</span>
-                <textarea class="<?= $input ?> pl-2 rounded-lg text-[13px] s:text-[16px] s:rounded-[16px] lg:rounded-[20px]" rows="5" placeholder="Например: текст, изображения, описание товаров, характеристики"></textarea>
+            <div class="flex flex-col-reverse gap-6 mt-3">
+                <div>
+                    <span class="<?= $label ?>">Какие данные нужно собирать?*</span>
+                    <textarea class="<?= $input ?> pl-2 rounded-lg text-[13px] s:text-[16px] s:rounded-[16px] lg:rounded-[20px]" rows="5" placeholder="Например: текст, изображения, описание товаров, характеристики"></textarea>
+                </div>
+
+                <div class="mt-6 bg-[#F2F6FF] rounded-lg p-4 text-center break-all flex flex-col items-center s:rounded-[16px] md:p-6 lg:rounded-[20px]">
+
+                    <div class="flex flex-col items-center justify-center gap-2 s:flex-row">
+                        <svg class="min-w-[20px] w-[20px] aspect-square"><use xlink:href="#svg-blue-info-triangle"></use></svg>
+                        <div class="text-[16px] text-[#1450D0] font-bold lg:text-[20px]">Распишите подробности</div>
+                    </div>
+
+                    <ul class="flex flex-col items-center gap-2 text-[#5A575F] text-[14px] text-left mt-2 s:text-[15px] lg:text-[16px]">
+                        <?php $svgInList = "aspect-square w-3 p-1 box-content bg-white rounded-full"; ?>
+                        <li class="flex items-center gap-2">
+                            <svg class="<?= $svgInList ?>"><use xlink:href="#svg-blue-check-mark"></use></svg>
+                            <span>ссылки на сайты, которые вам нужно парсить</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="<?= $svgInList ?>"><use xlink:href="#svg-blue-check-mark"></use></svg>
+                            <span>ссылки на сайты, которые вам нужно парсить</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <svg class="<?= $svgInList ?>"><use xlink:href="#svg-blue-check-mark"></use></svg>
+                            <span>ссылки на сайты, которые вам нужно парсить</span>
+                        </li>
+                    </ul>
+
+                    <div class="bg-white font-bold text-[14px] text-[#5A575F] p-2 rounded-lg mt-4 text-left break-keep max-w-[500px] xl:text-[16px]">
+                        Чем больше подробностей, тем лучше. После отправки формы наши специалисты сразу же проанализируют вашу заявку, рассчитают стоимость – и мы свяжемся с вами с полностью готовым просчёто.
+                    </div>
+
+                </div>
             </div>
+
+            <button type="submit" class="m-auto bg-[#1450D0] text-[#C6D8FF] text-[clamp(10px,_8svw,_24px)] max-text-size py-2 px-10 rounded-full font-bold uppercase flex items-center gap-3 w-full justify-center mt-2
+                                         s:w-auto
+                                         sm:mt-[20px]
+                                         lg:text-[28px] lg:py-4 lg:px-14 lg:mt-[30px]
+                                         xl:mt-[40px]">
+                <span>Отправить</span>
+                <svg class="aspect-square min-w-[10px] max-w-[20px] w-[7svw]"><use xlink:href="#svg-arrow-up"></use></svg>
+            </button>
         </form>
 
-
-        <div class="mt-6 bg-[#F2F6FF] rounded-lg s:rounded-[16px] lg:rounded-[20px] p-4 text-center break-all">
-
-            <div class="flex flex-col items-center justify-center gap-2 s:flex-row">
-                <svg class="min-w-[20px] w-[20px] aspect-square"><use xlink:href="#svg-blue-info-triangle"></use></svg>
-                <div class="text-[16px] text-[#1450D0] font-bold lg:text-[20px]">Распишите подробности</div>
-            </div>
-
-            <ul class="flex flex-col items-center gap-2 text-[#5A575F] text-[14px] text-left mt-2 s:text-[15px] lg:text-[16px]">
-                <?php $svgInList = "aspect-square w-3 p-1 box-content bg-white rounded-full"; ?>
-                <li class="flex items-center gap-2">
-                    <svg class="<?= $svgInList ?>"><use xlink:href="#svg-blue-check-mark"></use></svg>
-                    <span>ссылки на сайты, которые вам нужно парсить</span>
-                </li>
-                <li class="flex items-center gap-2">
-                    <svg class="<?= $svgInList ?>"><use xlink:href="#svg-blue-check-mark"></use></svg>
-                    <span>ссылки на сайты, которые вам нужно парсить</span>
-                </li>
-                <li class="flex items-center gap-2">
-                    <svg class="<?= $svgInList ?>"><use xlink:href="#svg-blue-check-mark"></use></svg>
-                    <span>ссылки на сайты, которые вам нужно парсить</span>
-                </li>
-            </ul>
-
-        </div>
     </div>
 </div>
 

@@ -763,6 +763,10 @@ body {
   grid-column: span 2 / span 2;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .mx-\[0\.5rem\] {
   margin-left: 0.5rem;
   margin-right: 0.5rem;
@@ -850,6 +854,18 @@ body {
 
 .mt-2 {
   margin-top: 0.5rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mt-3 {
+  margin-top: 0.75rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
 }
 
 .box-content {
@@ -984,6 +1000,10 @@ body {
   width: 5rem;
 }
 
+.w-\[clamp\(10px\2c _10svw\2c _24px\)\] {
+  width: clamp(10px, 10svw, 24px);
+}
+
 .min-w-4 {
   min-width: 1rem;
 }
@@ -1011,6 +1031,14 @@ body {
 
 .min-w-\[20px\] {
   min-width: 20px;
+}
+
+.min-w-\[clamp\(10px\2c _10svw\2c _24px\)\] {
+  min-width: clamp(10px, 10svw, 24px);
+}
+
+.min-w-\[10px\] {
+  min-width: 10px;
 }
 
 .max-w-4 {
@@ -1050,6 +1078,18 @@ body {
   max-width: 3rem;
 }
 
+.max-w-\[20px\] {
+  max-width: 20px;
+}
+
+.max-w-\[600px\;\] {
+  max-width: 600px;;
+}
+
+.max-w-\[500px\] {
+  max-width: 500px;
+}
+
 .-rotate-180 {
   --tw-rotate: -180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1061,6 +1101,10 @@ body {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .flex-wrap {
@@ -1111,6 +1155,10 @@ body {
   gap: 0.25rem;
 }
 
+.gap-5 {
+  gap: 1.25rem;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
@@ -1125,8 +1173,17 @@ body {
   white-space: normal;
 }
 
+.break-normal {
+  overflow-wrap: normal;
+  word-break: normal;
+}
+
 .break-all {
   word-break: break-all;
+}
+
+.break-keep {
+  word-break: keep-all;
 }
 
 .rounded-2xl {
@@ -1242,6 +1299,15 @@ body {
   background-color: rgb(242 246 255 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\] {
+  background-color: ;
+}
+
+.bg-\[\#1450D0\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(20 80 208 / var(--tw-bg-opacity, 1));
+}
+
 .p-1 {
   padding: 0.25rem;
 }
@@ -1280,6 +1346,10 @@ body {
 
 .p-\[4px\] {
   padding: 4px;
+}
+
+.p-\[15px\] {
+  padding: 15px;
 }
 
 .px-5 {
@@ -1332,6 +1402,26 @@ body {
   padding-right: 5rem;
 }
 
+.py-\[20px\] {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.py-\[15px\] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1354,6 +1444,10 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.text-justify {
+  text-align: justify;
 }
 
 .text-\[14px\] {
@@ -1409,6 +1503,34 @@ body {
 
 .text-\[13px\] {
   font-size: 13px;
+}
+
+.text-\[24px\] {
+  font-size: 24px;
+}
+
+.text-\[7svw\] {
+  font-size: 7svw;
+}
+
+.text-\[10svw\] {
+  font-size: 10svw;
+}
+
+.text-\[clamp\(10px\2c _10svw\2c _30px\)\] {
+  font-size: clamp(10px, 10svw, 30px);
+}
+
+.text-\[clamp\(10px\2c _10svw\2c _24px\)\] {
+  font-size: clamp(10px, 10svw, 24px);
+}
+
+.text-\[clamp\(10px\2c _5svw\2c _24px\)\] {
+  font-size: clamp(10px, 5svw, 24px);
+}
+
+.text-\[clamp\(10px\2c _8svw\2c _24px\)\] {
+  font-size: clamp(10px, 8svw, 24px);
 }
 
 .font-bold {
@@ -1506,6 +1628,16 @@ body {
 
 .text-\[\#\#5A575F\] {
   color: ##5A575F;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
+.text-\[\#C6D8FF\] {
+  --tw-text-opacity: 1;
+  color: rgb(198 216 255 / var(--tw-text-opacity, 1));
 }
 
 .opacity-0 {
@@ -1729,6 +1861,10 @@ body {
     width: 1.75rem;
   }
 
+  .s\:w-auto {
+    width: auto;
+  }
+
   .s\:min-w-8 {
     min-width: 2rem;
   }
@@ -1756,6 +1892,11 @@ body {
   .s\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .s\:px-\[0\.5rem\] {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .s\:text-left {
@@ -1819,6 +1960,18 @@ body {
     margin-bottom: 1.5rem;
   }
 
+  .sm\:mt-\[10px\] {
+    margin-top: 10px;
+  }
+
+  .sm\:mt-\[15px\] {
+    margin-top: 15px;
+  }
+
+  .sm\:mt-\[20px\] {
+    margin-top: 20px;
+  }
+
   .sm\:flex {
     display: flex;
   }
@@ -1846,6 +1999,16 @@ body {
   .sm\:px-4 {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  .sm\:px-3 {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .sm\:px-\[0\.5rem\] {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   @media (min-width: 576px) {
@@ -1949,6 +2112,10 @@ body {
     gap: 5rem;
   }
 
+  .md\:p-6 {
+    padding: 1.5rem;
+  }
+
   .md\:px-3 {
     padding-left: 0.75rem;
     padding-right: 0.75rem;
@@ -1985,6 +2152,14 @@ body {
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .lg\:mt-\[20px\] {
+    margin-top: 20px;
+  }
+
+  .lg\:mt-\[30px\] {
+    margin-top: 30px;
   }
 
   .lg\:block {
@@ -2059,6 +2234,16 @@ body {
     padding: 1.5rem;
   }
 
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .lg\:px-14 {
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+  }
+
   .lg\:pb-10 {
     padding-bottom: 2.5rem;
   }
@@ -2088,6 +2273,10 @@ body {
   .lg\:text-\[16px\] {
     font-size: 16px;
   }
+
+  .lg\:text-\[28px\] {
+    font-size: 28px;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -2106,6 +2295,10 @@ body {
 
   .xl\:mt-10 {
     margin-top: 2.5rem;
+  }
+
+  .xl\:mt-\[40px\] {
+    margin-top: 40px;
   }
 
   .xl\:grid {
@@ -2203,6 +2396,10 @@ body {
 
   .xl\:text-\[16px\] {
     font-size: 16px;
+  }
+
+  .xl\:text-\[18px\] {
+    font-size: 18px;
   }
 
   .xl\:leading-\[28px\] {
