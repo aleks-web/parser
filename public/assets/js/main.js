@@ -145,3 +145,20 @@ document.addEventListener('DOMContentLoaded', () => {
    });
 
 });
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+   let menuOpenNode = document.querySelector('#open-menu');
+   let menu = document.querySelector('#mobile-menu');
+
+   menuOpenNode.addEventListener('click', (e) => {
+      let height = menu.getBoundingClientRect().height;
+
+      if (height) {
+         gsap.to(menu, { height: 0 });
+      } else {
+         gsap.to(menu, { height: 'auto' });
+      }
+   });
+});
