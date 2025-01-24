@@ -7,7 +7,7 @@
         <?php include("../../include/head.php"); ?>
     </head>
 
-    <body class="relative w-full overflow-hidden">
+    <body class="relative w-full overflow-x-hidden">
         <?php includeBlock('header'); ?>
 
         <?php includeBlock('form'); ?>

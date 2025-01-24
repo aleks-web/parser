@@ -1143,6 +1143,10 @@ body {
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 .truncate {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -2173,6 +2177,14 @@ body {
     font-size: 32px;
   }
 
+  .md\:text-\[35px\] {
+    font-size: 35px;
+  }
+
+  .md\:text-\[40px\] {
+    font-size: 40px;
+  }
+
   .md\:leading-\[25px\] {
     line-height: 25px;
   }
@@ -2307,9 +2319,23 @@ body {
     right: -110px;
   }
 
+  .lg\:-top-\[200px\] {
+    top: -200px;
+  }
+
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .lg\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .lg\:my-16 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
 
   .lg\:mt-\[30px\] {
@@ -2346,6 +2372,26 @@ body {
 
   .lg\:h-\[280\%\] {
     height: 280%;
+  }
+
+  .lg\:h-\[300px\] {
+    height: 300px;
+  }
+
+  .lg\:h-\[1000px\] {
+    height: 1000px;
+  }
+
+  .lg\:h-\[800px\] {
+    height: 800px;
+  }
+
+  .lg\:h-\[600px\] {
+    height: 600px;
+  }
+
+  .lg\:h-\[700px\] {
+    height: 700px;
   }
 
   .lg\:w-32 {
@@ -2427,6 +2473,26 @@ body {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .lg\:text-\[40px\] {
+    font-size: 40px;
+  }
+
+  .lg\:text-\[30px\] {
+    font-size: 30px;
+  }
+
+  .lg\:text-\[29px\] {
+    font-size: 29px;
+  }
+
+  .lg\:text-\[22px\] {
+    font-size: 22px;
+  }
+
+  .lg\:leading-6 {
+    line-height: 1.5rem;
+  }
 }
 
 @media (min-width: 1536px) {
@@ -2502,6 +2568,38 @@ body {
     top: -275px;
   }
 
+  .xl\:-top-\[200px\] {
+    top: -200px;
+  }
+
+  .xl\:-top-\[300px\] {
+    top: -300px;
+  }
+
+  .xl\:top-\[100px\] {
+    top: 100px;
+  }
+
+  .xl\:top-\[10px\] {
+    top: 10px;
+  }
+
+  .xl\:top-\[20px\] {
+    top: 20px;
+  }
+
+  .xl\:top-\[0\] {
+    top: 0;
+  }
+
+  .xl\:-top-\[10px\] {
+    top: -10px;
+  }
+
+  .xl\:-top-\[30px\] {
+    top: -30px;
+  }
+
   .xl\:col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -2549,6 +2647,10 @@ body {
 
   .xl\:h-\[225\%\] {
     height: 225%;
+  }
+
+  .xl\:h-\[700px\] {
+    height: 700px;
   }
 
   .xl\:w-12 {
@@ -2674,6 +2776,10 @@ body {
   .xl\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .xl\:text-\[45px\] {
+    font-size: 45px;
   }
 
   .xl\:leading-6 {
@@ -2874,8 +2980,49 @@ body {
     top: -40px;
   }
 
+  .\32xl\:-right-\[260px\] {
+    right: -260px;
+  }
+
+  .\32xl\:-top-\[130px\] {
+    top: -130px;
+  }
+
+  .\32xl\:-top-\[230px\] {
+    top: -230px;
+  }
+
+  .\32xl\:-top-\[0\] {
+    top: 0;
+  }
+
+  .\32xl\:top-\[20px\] {
+    top: 20px;
+  }
+
+  .\32xl\:top-\[90px\] {
+    top: 90px;
+  }
+
+  .\32xl\:top-\[120px\] {
+    top: 120px;
+  }
+
+  .\32xl\:my-20 {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
   .\32xl\:mb-8 {
     margin-bottom: 2rem;
+  }
+
+  .\32xl\:mb-36 {
+    margin-bottom: 9rem;
+  }
+
+  .\32xl\:mb-32 {
+    margin-bottom: 8rem;
   }
 
   .\32xl\:h-\[63px\] {
@@ -2926,6 +3073,26 @@ body {
     height: 80%;
   }
 
+  .\32xl\:h-\[700px\] {
+    height: 700px;
+  }
+
+  .\32xl\:h-\[1200px\] {
+    height: 1200px;
+  }
+
+  .\32xl\:h-\[1100px\] {
+    height: 1100px;
+  }
+
+  .\32xl\:h-\[1000px\] {
+    height: 1000px;
+  }
+
+  .\32xl\:h-\[900px\] {
+    height: 900px;
+  }
+
   .\32xl\:p-2 {
     padding: 0.5rem;
   }
@@ -2936,5 +3103,25 @@ body {
 
   .\32xl\:text-\[44px\] {
     font-size: 44px;
+  }
+
+  .\32xl\:text-\[52px\] {
+    font-size: 52px;
+  }
+
+  .\32xl\:text-\[20px\] {
+    font-size: 20px;
+  }
+
+  .\32xl\:text-\[34px\] {
+    font-size: 34px;
+  }
+
+  .\32xl\:leading-10 {
+    line-height: 2.5rem;
+  }
+
+  .\32xl\:leading-6 {
+    line-height: 1.5rem;
   }
 }

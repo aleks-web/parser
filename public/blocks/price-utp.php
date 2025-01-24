@@ -15,22 +15,28 @@
                     lg:grid-cols-3
                     xl:grid-cols-5">
 
-            <?php $wrap = "flex flex-col justify-center border-2 rounded-2xl p-3 text-center py-8
-                           s:py-5"; ?>
+            <?php $wrap = "flex flex-col justify-center border-2 rounded-2xl p-3 text-center py-8 text-[14px]
+                           s:py-5 s:text-[16px]
+                           xl:text-[18px]
+                           2xl:text-[20px] 2xl:leading-6"; ?>
             <?php $title = "block mb-3 text-[18px] font-bold italic uppercase text-[#1450D0] break-all leading-[26px]
                              s:text-[24px] s:mb-1
-                             sm:text-[25px]"; ?>
+                             sm:text-[25px]
+                             lg:text-[28px]
+                             2xl:text-[34px]"; ?>
             <?php $title2 = "block mb-3 text-[20px] font-bold italic uppercase text-[#5F5C63]
                              s:text-[18px]
-                             sm:text-[20px]"; ?>
+                             sm:text-[20px]
+                             lg:text-[22px] lg:leading-6
+                             2xl:text-[24px]"; ?>
 
             <div class="<?= $wrap ?>">
-                <span class="block mb-3">от <span class="text-[28px] font-bold italic uppercase text-[#1450D0]">5000</span> рублей</span>
+                <span class="block mb-3">от <span class="text-[28px] font-bold italic uppercase text-[#1450D0] md:text-[35px] lg:text-[40px] xl:text-[45px] 2xl:text-[52px]">5000</span> рублей</span>
                 <span>минимальная<br>стоимость парсинга</span>
             </div>
 
             <div class="<?= $wrap ?>">
-                <span class="block mb-3">от <span class="text-[28px] font-bold italic uppercase text-[#1450D0]">10</span> копеек</span>
+                <span class="block mb-3">от <span class="text-[28px] font-bold italic uppercase text-[#1450D0] md:text-[35px] lg:text-[40px] xl:text-[45px] 2xl:text-[52px]">10</span> копеек</span>
                 <span>стоимость парсинга<br>данных по одной ссылке</span>
             </div>
 

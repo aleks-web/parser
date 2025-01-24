@@ -1,5 +1,12 @@
-<div class="md:container my-10 s:px-[0.5rem] xl:max-w-[1536px]">
-    <div class="bg-white p-3 rounded-xl sm:p-6 xl:p-10">
+<div class="sm:container my-10 s:px-[0.5rem] md:relative lg:my-16 xl:max-w-[1536px] 2xl:static 2xl:my-20 2xl:mb-32">
+
+    <img src="<?= ASSETS_URL ?>/img/head-monitor.webp" class="hidden absolute z-10 aspect-square
+                lg:block lg:-right-[260px] lg:-top-[200px] lg:h-[700px]
+                xl:-right-[260px] xl:-top-[30px] xl:h-[700px]
+                2xl:right-0 2xl:top-[120px] 2xl:h-[900px]
+                ">
+
+    <div class="bg-white p-3 rounded-xl relative z-20 sm:p-6 xl:p-10">
         <div class="mb-5 text-center text-[18px] uppercase text-[#1450D0] font-bold italic break-all
                     s:text-[22px]
                     sm:text-[28px]
