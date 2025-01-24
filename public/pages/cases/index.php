@@ -4,15 +4,12 @@
 <!doctype html>
 <html lang="ru">
     <head>
-        <?php include("../../include/head.php"); ?>
+        <?php includeInc("head"); ?>
     </head>
 
     <body>
-
         <?php includeBlock('header'); ?>
-
-        Кейсы
-
+        <?php includeBlock('cases'); ?>
         <?php includeInc('footer'); ?>
     </body>
 </html>

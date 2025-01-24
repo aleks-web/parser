@@ -1,7 +1,7 @@
-<div class="container mt-20">
+<div class="sm:container px-[0.5rem] mt-20">
     <h1 class="flex flex-col">
-        <span class="bg-[--main-clr] max-w-max px-5 py-2 text-gray-50 text-[44px] italic font-bold uppercase rounded-[20px]">Стоимость парсинга сайтов</span>
-        <span class="bg-gray-50 max-w-max px-5 py-2 text-gray-600 text-[44px] italic font-bold uppercase rounded-[20px]">Складывается из многих составляющих</span>
+        <span class="title-blue">Стоимость парсинга сайтов</span>
+        <span class="title-white">Складывается из многих составляющих</span>
     </h1>
 
     <ul class="flex flex-col 2xl:gap-5 mt-10">

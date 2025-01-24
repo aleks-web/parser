@@ -4,16 +4,14 @@
 <!doctype html>
 <html lang="ru">
     <head>
-        <?php include("../../include/head.php"); ?>
+        <?php includeInc("head"); ?>
     </head>
 
     <body>
-
         <?php includeBlock('header'); ?>
-
-        <div class="sm:container px-[0.5rem">
-            ads
-        </div>
+        <?php includeBlock('team'); ?>
+        <?php // includeBlock('map-utp'); ?>
+        <?php //includeBlock('details'); ?>
 
         <?php includeInc('footer'); ?>
     </body>

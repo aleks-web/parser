@@ -28,7 +28,7 @@
         </div>
 
         <div class="hidden lg:block text-xl text-gray-700">
-            эти и <span class="font-bold text-[--main-clr]">боллее 54 000 других сайтов</span> мы уже<br>спарсили для наших клиентов
+            эти и <span class="font-bold text-[--main-clr] text-2xl">боллее 54 000 других сайтов</span> мы уже<br>спарсили для наших клиентов
         </div>
 
     </div>
@@ -53,23 +53,3 @@
         <img class="<?= ($icon === 'mvideo.png') ? 'max-h-4' : 'max-h-6'; ?> min-w-max" src="/assets/img/icons/services/<?= $icon ?>" />
     </div>
 <?php } ?>
-
-
-
-
-
-<!--ul class="flex flex-col 2xl:gap-5 mt-10">
-    <?php $classLi = 'flex items-center gap-3 border-2 border-[var(--main-clr)] rounded-[50px] leading-normal p-5 max-w-max text-[--main-clr] font-medium text-[20px]';?>
-    <li class="<?= $classLi ?>">
-        <svg width="14" height="10"><use xlink:href="#svg-blue-check-mark"></use></svg>
-        <span>какое количество страниц нужно спарсить</span>
-    </li>
-    <li class="<?= $classLi ?>">
-        <svg width="14" height="10"><use xlink:href="#svg-blue-check-mark"></use></svg>
-        <span>какие именно данные нужно собрать с каждой страницы</span>
-    </li>
-    <li class="<?= $classLi ?>">
-        <svg width="14" height="10"><use xlink:href="#svg-blue-check-mark"></use></svg>
-        <span>нужно ли делать подбор товаров (матчинг), сопоставлять данные</span>
-    </li>
-</ul-->

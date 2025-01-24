@@ -4,15 +4,14 @@
 <!doctype html>
 <html lang="ru">
     <head>
-        <?php include("./include/head.php"); ?>
+        <?php includeInc("head"); ?>
     </head>
 
     <body>
-        <?php includeBlock('props'); ?>
-        <?php // includeBlock('header'); ?>
-        <?php // includeBlock('main-banner'); ?>
-        <?php // includeBlock('what-data-collect'); ?>
-        <?php // includeBlock('faq'); ?>
+        <?php includeBlock('header'); ?>
+        <?php includeBlock('main-banner'); ?>
+        <?php includeBlock('what-data-collect'); ?>
+        <?php includeBlock('faq'); ?>
 
         <?php includeInc('footer'); ?>
     </body>

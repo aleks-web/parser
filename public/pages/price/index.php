@@ -11,6 +11,7 @@
 
         <?php includeBlock('header'); ?>
 
+        <?php includeBlock('price-banner'); ?>
         <?php includeBlock('price-utp'); ?>
 
         <?php includeInc('footer'); ?>
