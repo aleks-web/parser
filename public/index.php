@@ -8,10 +8,10 @@
     </head>
 
     <body class="relative w-full overflow-x-hidden">
-        <?php includeBlock('header'); ?>
+        <?php // includeBlock('header'); ?>
         <?php includeBlock('main-banner'); ?>
-        <?php includeBlock('what-data-collect'); ?>
-        <?php includeBlock('faq'); ?>
+        <?php // includeBlock('what-data-collect'); ?>
+        <?php // includeBlock('faq'); ?>
 
         <?php includeInc('footer'); ?>
     </body>

@@ -14,9 +14,10 @@
                         md:justify-between">
 
                 <div class="flex justify-end items-center gap-4 w-full text-sm
-                            md:justify-start md:text-md
-                            lg:text-lg
-                            xl:gap-26">
+                            md:justify-start md:text-md md:gap-8
+                            lg:text-lg lg:gap-12
+                            xl:gap-26
+                            2xl:gap-28">
                     <?php theContactLink('#', 'Написать в WhatsApp', 'svg-whatsapp') ?>
                     <?php theContactLink('#', '+7 (925) 511-01-94', 'svg-phone') ?>
                     <?php theContactLink('#', 'ak@gmtorg.ru', 'svg-email') ?>
@@ -62,7 +63,9 @@
 <?php function theContactLink($href, $text, $svgIconId) { ?>
     <a href="<?= $href ?>" class="flex items-center gap-2">
         <svg class="w-[7svw] aspect-square
-                    s:w-7"><use xlink:href="#<?= $svgIconId ?>"></use></svg>
+                    s:w-7
+                    md:w-5
+                    lg:w-6"><use xlink:href="#<?= $svgIconId ?>"></use></svg>
         <span class="hidden md:block"><?= $text ?></span>
     </a>
 <?php } ?>

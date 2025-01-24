@@ -34,7 +34,7 @@
 }
 
 .page-banner {
-    @apply mt-[15svw] s:mt-[50px] md:mt-[60px] lg:mt-[75px] xl:mt-[85px] 2xl:mt-[100px];
+    @apply my-[15svw] s:my-[50px] md:my-[60px] lg:my-[75px] xl:my-[85px] 2xl:my-[100px];
 }
 
 /*
