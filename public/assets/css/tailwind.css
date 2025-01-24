@@ -1,6 +1,7 @@
 :root {
     --main-clr: #1450D0;
     --clr-2: #E9F0FF;
+    --clr-3: #F2F6FF;
 }
 
 @tailwind base;
@@ -30,6 +31,10 @@
     lg:text-[34px] lg:py-2
     xl:text-[44px] xl:py-4
     2xl:px-8;
+}
+
+.page-banner {
+    @apply mt-[15svw] s:mt-[50px] md:mt-[60px] lg:mt-[75px] xl:mt-[85px] 2xl:mt-[100px];
 }
 
 /*

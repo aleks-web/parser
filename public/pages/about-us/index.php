@@ -7,7 +7,7 @@
         <?php includeInc("head"); ?>
     </head>
 
-    <body>
+    <body class="relative w-full overflow-hidden">
         <?php includeBlock('header'); ?>
         <?php includeBlock('team'); ?>
         <?php // includeBlock('map-utp'); ?>

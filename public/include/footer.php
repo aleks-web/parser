@@ -1,4 +1,4 @@
-<div class="footer py-16 bg-[#292929] text-[white] font-bold text-[20px]">
+<div class="footer py-16 bg-[#292929] text-[white] font-bold text-[20px] relative z-20">
     <div class="container">
         <ul class="flex flex-col uppercase gap-4 sm:grid sm:grid-cols-2 md:flex md:flex-row md:justify-center md:gap-20 lg:gap-32 xl:gap-44">
             <li><a href="/pages/price/index.php">Цены</a></li>
