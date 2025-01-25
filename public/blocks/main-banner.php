@@ -1,5 +1,4 @@
-<div class="truncate whitespace-normal page-banner
-            sm:mb-[400px]">
+<div class="truncate whitespace-normal page-banner">
     <div class="sm:container px-[0.5rem]">
 
         <h1 class="flex flex-wrap">
@@ -34,34 +33,23 @@
 
     </div>
 
-    <div class="hidden relative max-w-max h-[300px] -right-[10px] -top-[110px]
-                s:flex
-
-                sm:absolute sm:right-0 sm:bottom-0
-                md:-top-[250px]
-                lg:absolute lg:-top-[200px] lg:right-0
+    <div class="hidden relative
+                s:flex s:w-[100svw] s:-right-[60px] s:-top-[20px] s:max-w-max
+                sm:max-w-[none] sm:min-w-[100%] sm:-right-[120px] sm:-top-[100px] sm:-mb-[130px] sm:aspect-square
+                md:max-w-[none] md:min-w-[100%] md:-right-[120px] md:-top-[150px] md:-mb-[160px] md:aspect-square
+                lg:absolute lg:-top-[120px] lg:-right-[80px] lg:max-w-[40svw] lg:min-w-[auto]
                 xl:absolute xl:right-0 xl:-top-[150px]">
 
-        <div class="relative -z-10 aspect-square min-w-[135svw]
-                    sm:min-w-[300px] sm:h-[300px]
-                    sm:w-[20svw]
-                    lg:min-w-[auto] lg:w-[60%]
-                    xl:w-[100%]">
+        <img class="w-full" src="<?= ASSETS_URL ?>/img/head-monitor.webp" alt="monitor">
 
-            <img class="w-full" src="<?= ASSETS_URL ?>/img/head-monitor.webp" alt="monitor">
-
-            <img class="absolute top-[39%] right-[28%] w-[5%]" src="<?= ASSETS_URL ?>/img/main-banner/sber.svg" alt="sber">
-            <img class="absolute top-[42%] right-[34%] w-[7%]" src="<?= ASSETS_URL ?>/img/main-banner/mvideo.svg" alt="mvideo">
-            <img class="absolute top-[33%] right-[29%] w-[35%]" src="<?= ASSETS_URL ?>/img/main-banner/yamarket.svg" alt="yamarket">
-            <img class="absolute top-[49%] right-[53%] w-[12%]" src="<?= ASSETS_URL ?>/img/main-banner/wb.svg" alt="wb">
-            <img class="absolute top-[38%] right-[50%] w-[47%]" src="<?= ASSETS_URL ?>/img/main-banner/avito.svg" alt="avito">
-            <img class="absolute top-[49%] right-[84%] w-[25%]" src="<?= ASSETS_URL ?>/img/main-banner/ozon.svg" alt="ozon">
-        </div>
+        <img class="absolute top-[39%] right-[28%] w-[5%]" src="<?= ASSETS_URL ?>/img/main-banner/sber.svg" alt="sber">
+        <img class="absolute top-[42%] right-[34%] w-[7%]" src="<?= ASSETS_URL ?>/img/main-banner/mvideo.svg" alt="mvideo">
+        <img class="absolute top-[33%] right-[29%] w-[35%]" src="<?= ASSETS_URL ?>/img/main-banner/yamarket.svg" alt="yamarket">
+        <img class="absolute top-[49%] right-[53%] w-[12%]" src="<?= ASSETS_URL ?>/img/main-banner/wb.svg" alt="wb">
+        <img class="absolute top-[38%] right-[50%] w-[47%]" src="<?= ASSETS_URL ?>/img/main-banner/avito.svg" alt="avito">
+        <img class="absolute top-[49%] right-[84%] w-[25%]" src="<?= ASSETS_URL ?>/img/main-banner/ozon.svg" alt="ozon">
     </div>
 </div>
-
-
-
 
 
 
