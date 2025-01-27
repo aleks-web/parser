@@ -64,7 +64,7 @@
             background-color: blue;
         }
     }
-    @media (min-width: 1920px) {
+    @media (min-width: 1836px) {
         .verstka:before {
             content: '2xl (1920)';
             color: white;

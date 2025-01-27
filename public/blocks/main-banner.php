@@ -38,9 +38,10 @@
                 sm:max-w-[none] sm:min-w-[100%] sm:-right-[120px] sm:-top-[100px] sm:-mb-[130px] sm:aspect-square
                 md:max-w-[none] md:min-w-[100%] md:-right-[120px] md:-top-[150px] md:-mb-[160px] md:aspect-square
                 lg:absolute lg:-top-[120px] lg:-right-[80px] lg:max-w-[40svw] lg:min-w-[auto]
-                xl:absolute xl:right-0 xl:-top-[150px]">
+                xl:right-0 xl:-top-[120px]
+                2xl:min-w-[900px] 2xl:max-w-[900px] 2xl:w-[900px] 2xl:-top-[210px]">
 
-        <img class="w-full" src="<?= ASSETS_URL ?>/img/head-monitor.webp" alt="monitor">
+        <img class="w-full 2xl:min-w-[inherit] 2xl:max-w-[inherit] 2xl:w-[inherit]" src="<?= ASSETS_URL ?>/img/head-monitor.webp" alt="monitor">
 
         <img class="absolute top-[39%] right-[28%] w-[5%]" src="<?= ASSETS_URL ?>/img/main-banner/sber.svg" alt="sber">
         <img class="absolute top-[42%] right-[34%] w-[7%]" src="<?= ASSETS_URL ?>/img/main-banner/mvideo.svg" alt="mvideo">
