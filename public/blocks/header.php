@@ -63,7 +63,7 @@
 
 <?php function theContactLink($href, $text, $svgIconId) { ?>
     <a href="<?= $href ?>" class="flex items-center gap-2">
-        <svg class="w-[7svw] aspect-square
+        <svg class="w-[7svw] aspect-square text-[#5A575F]
                     s:w-7
                     md:w-5
                     lg:w-6"><use xlink:href="#<?= $svgIconId ?>"></use></svg>

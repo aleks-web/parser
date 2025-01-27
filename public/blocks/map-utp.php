@@ -1,5 +1,5 @@
 <?php
-    $item = "text-[12px] text-[#5A575F] leading-4 text-center flex flex-col items-center justify-center border border-[#D9D9D9] rounded-[15px] p-4 s:text-[14px] xl:text-[16px] xl:leading-5";
+    $item = "text-[12px] text-[#5A575F] leading-4 text-center flex flex-col items-center justify-center border border-[#D9D9D9] rounded-[15px] p-4 s:text-[14px] xl:text-[16px] xl:leading-5 2xl:text-[18px]";
     $img = "mb-6 aspect-square w-[70px]";
 ?>
 
