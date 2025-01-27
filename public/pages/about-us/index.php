@@ -10,8 +10,8 @@
     <body class="relative w-full overflow-x-hidden">
         <?php includeBlock('header'); ?>
         <?php includeBlock('team'); ?>
-        <?php // includeBlock('map-utp'); ?>
-        <?php // includeBlock('details'); ?>
+        <?php includeBlock('map-utp'); ?>
+        <?php includeBlock('details'); ?>
 
         <?php includeInc('footer'); ?>
     </body>
