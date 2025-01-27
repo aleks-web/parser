@@ -11,7 +11,7 @@
         <?php includeBlock('header'); ?>
         <?php includeBlock('team'); ?>
         <?php // includeBlock('map-utp'); ?>
-        <?php //includeBlock('details'); ?>
+        <?php // includeBlock('details'); ?>
 
         <?php includeInc('footer'); ?>
     </body>

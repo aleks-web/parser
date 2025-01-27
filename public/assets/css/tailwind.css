@@ -15,8 +15,7 @@
 
 .title-blue {
     @apply
-    bg-[--main-clr] max-w-max px-5 py-1 text-gray-50 text-[22px] italic font-bold uppercase rounded-[20px] break-all leading-10 block
-    sm:inline-block
+    flex items-center bg-[--main-clr] max-w-max px-5 py-1 text-gray-50 text-[22px] italic font-bold uppercase rounded-[20px] break-all leading-10
     md:text-[25px]
     lg:text-[34px] lg:py-2
     xl:text-[44px] xl:py-4
@@ -25,8 +24,7 @@
 
 .title-white {
     @apply
-    bg-[white] max-w-max px-5 py-1 text-gray-600 text-[22px] italic font-bold uppercase rounded-[20px] break-all leading-10 block
-    sm:inline-block
+    flex items-center bg-[white] max-w-max px-5 py-1 text-gray-600 text-[22px] italic font-bold uppercase rounded-[20px] break-all leading-10
     md:text-[25px]
     lg:text-[34px] lg:py-2
     xl:text-[44px] xl:py-4

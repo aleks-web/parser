@@ -1,12 +1,12 @@
-<div class="sm:container px-[0.5rem] my-20">
+<div class="sm:container px-[0.5rem] pb-16 sm:pb-20 lg:pb-28">
     <h2>
-        <span class="title-white">Часто задаваемые</span>
+        <span class="title-white sm:pl-0">Часто задаваемые</span>
         <span class="title-blue">вопросы</span>
     </h2>
 
 
     <?php $i = 0; while ($i != 5) : $i++; ?>
-        <div class="accordion group/accordion border-b py-5">
+        <div class="accordion group/accordion border-b pb-5 pt-8">
             <div class="accordion__title
                     flex justify-between items-center w-full text-[--main-clr] font-bold text-[22px] gap-3 leading-[22px] cursor-pointer transition-all delay-50
                     md:text-[25px] md:leading-[25px]

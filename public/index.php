@@ -8,11 +8,15 @@
     </head>
 
     <body class="relative w-full overflow-x-hidden">
-        <?php // includeBlock('header'); ?>
+        <?php includeBlock('header'); ?>
         <?php includeBlock('main-banner'); ?>
-        <?php includeBlock('scen'); ?>
         <?php includeBlock('what-data-collect'); ?>
-        <?php // includeBlock('faq'); ?>
+        <?php includeBlock('scen'); ?>
+
+        <div class="bg-white">
+            <?php includeBlock('reasons'); ?>
+            <?php includeBlock('faq'); ?>
+        </div>
 
         <?php includeInc('footer'); ?>
     </body>

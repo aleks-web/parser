@@ -1,4 +1,4 @@
-<div class="sm:container px-[0.5rem] py-12 relative z-20">
+<div class="sm:container px-[0.5rem] relative z-20 py-12 sm:py-20 lg:py-28 2xl:py-32">
     <div class="flex flex-wrap mb-10">
         <span class="title-blue">Любые сценарии</span>
         <span class="title-white">для ваших задач</span>
@@ -54,25 +54,6 @@
             <div class="flex flex-col justify-center gap-1.5">
                 <div class="<?= $titleText ?>">Объединение данных</div>
                 <div class="<?= $descText ?>">После парсинга можем объединять результаты из разных источников, сопоставлять таблицы, высчитывать изменения данных.</div>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div class="bg-white">
-    <div class="container py-12">
-        <div class="flex flex-wrap mb-10">
-            <span class="title-blue">6 причин,</span>
-            <span class="title-white">почему вы обратитесь к нам</span>
-        </div>
-
-        <div class="">
-            <div class="flex flex-col items-start bg-[#F2F6FF] rounded-[30px] p-5.5 overflow-hidden relative">
-                <div class="bg-[#1450D0] text-white rounded-[50px] w-[45px] h-[45px] p-2.5 flex justify-center items-center text-3xl font-extrabold">1</div>
-                <img src="./assets/img/icon.svg" alt="" class="absolute top-0 right-0 w-[110px] h-[140px] z-0">
-                <span class="text-2xl font-semibold text-[#5A575F] z-10">Оплата только после получения первых данных</span>
-                <span class="text-sm font-normal text-[#5A575F] z-10">Мы парсим данные, предоставляем вам первые 20 строк, вы убеждаетесь в качестве нашей работы – и только после этого производите оплату</span>
             </div>
         </div>
     </div>

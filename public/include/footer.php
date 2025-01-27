@@ -5,7 +5,7 @@
             <li>
                 <a href="/pages/order-parsing/index.php" class="flex gap-6 justify-start items-center md:inline">
                     <span>Заказать парсинг</span>
-                    <svg class="w-4 h-4 md:hidden"><use xlink:href="#svg-white-arrow"></use></svg>
+                    <svg class="w-4 h-4 md:hidden"><use xlink:href="#svg-right-arrow"></use></svg>
                 </a>
             </li>
             <li><a href="/pages/about-us/index.php">О нас</a></li>

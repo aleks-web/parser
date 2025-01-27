@@ -1,4 +1,6 @@
-<div class="sm:container my-8 mx-[0.5rem] xl:my-10 z-20 relative">
+<div class="sm:container mt-8 mb-20 mx-[0.5rem] z-20 relative
+            lg:mb-28
+            xl:mt-10">
     <div class="bg-white p-3 rounded-2xl">
         <div class="flex flex-col text-center gap-4 text-[16px] text-[#5A575F] items-center max-w-[1200px] mb-2
                     s:flex-row s:text-left

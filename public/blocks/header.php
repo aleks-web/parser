@@ -30,15 +30,15 @@
 
                 <div class="hidden md:flex">
                     <ul class="flex gap-4 font-bold text-sm uppercase -ml-2 -mb-3 lg:gap-16 xl:gap-32">
-                        <?php $linkClass = 'block hover:text-gray-600 hover:border-gray-600 border border-transparent transition-all ease-in delay-100 text-gray-600 rounded-lg min-w-max p-2
+                        <?php $linkClass = 'peer block hover:text-gray-600 hover:border-gray-600 border border-transparent transition-all ease-in delay-100 text-gray-600 rounded-lg min-w-max p-2
                                             lg:text-lg lg:rounded-xl
                                             xl:text-xl
-                                            '; ?>
+                                            has-[.active]:border-[--main-clr] has-[.active]:text-[--main-clr]'; ?>
 
-                        <li><a href="/pages/price/index.php" class="<?= $linkClass ?> <?= getCurrenPage() === 'price' ? 'active' : ''; ?>">Цены</a></li>
-                        <li><a href="/pages/order-parsing/index.php" class="<?= $linkClass ?> <?= getCurrenPage() === 'order-parsing' ? 'active' : ''; ?>">Заказать прайсинг</a></li>
-                        <li><a href="/pages/about-us/index.php" class="<?= $linkClass ?> <?= getCurrenPage() === 'about-us' ? 'active' : ''; ?>">О нас</a></li>
-                        <li><a href="/pages/cases/index.php" class="<?= $linkClass ?> <?= getCurrenPage() === 'cases' ? 'active' : ''; ?>">Кейсы и отзывы</a></li>
+                        <li><a href="/pages/price/index.php" class="<?= $linkClass ?>"><span class="<?= getCurrenPage() === 'price' ? 'active' : ''; ?>">Цены</span></a></li>
+                        <li><a href="/pages/order-parsing/index.php" class="<?= $linkClass ?>"><span class="<?= getCurrenPage() === 'order-parsing' ? 'active' : ''; ?>">Заказать прайсинг</span></a></li>
+                        <li><a href="/pages/about-us/index.php" class="<?= $linkClass ?>"><span class="<?= getCurrenPage() === 'about-us' ? 'active' : ''; ?>">О нас</span></a></li>
+                        <li><a href="/pages/cases/index.php" class="<?= $linkClass ?>"><span class="<?= getCurrenPage() === 'cases' ? 'active' : ''; ?>">Кейсы и отзывы</span></a></li>
                     </ul>
                 </div>
             </div>
@@ -46,14 +46,15 @@
 
         <div id="mobile-menu" class="md:hidden h-0 overflow-hidden">
             <ul class="flex flex-col mt-10 gap-1 font-bold text-[14px] uppercase">
-                <?php $linkClass2 = 'inline-block break-all border border-transparent transition-all ease-in delay-100 text-gray-600 rounded-lg p-2
+                <?php $linkClass2 = 'block break-all border border-transparent transition-all ease-in delay-100 text-gray-600 rounded-lg p-2
                                      hover:text-gray-600 hover:border-gray-600
-                                     s:text-lg'; ?>
+                                     s:text-lg
+                                     has-[.active]:border-[--main-clr] has-[.active]:text-[--main-clr]'; ?>
 
-                <li><a href="#" class="<?= $linkClass2 ?>">Цены</a></li>
-                <li><a href="#" class="<?= $linkClass2 ?>">Заказать прайсинг</a></li>
-                <li><a href="#" class="<?= $linkClass2 ?>">О нас</a></li>
-                <li><a href="#" class="<?= $linkClass2 ?>">Кейсы и отзывы</a></li>
+                <li><a href="/pages/price/index.php" class="<?= $linkClass2 ?>"><span class="<?= getCurrenPage() === 'price' ? 'active' : ''; ?>">Цены</span></a></li>
+                <li><a href="/pages/order-parsing/index.php" class="<?= $linkClass2 ?>"><span class="<?= getCurrenPage() === 'order-parsing' ? 'active' : ''; ?> flex items-center justify-start gap-4">Заказать прайсинг<svg class="w-5 aspect-square"><use xlink:href="#svg-right-arrow"></use></svg></span></a></li>
+                <li><a href="/pages/about-us/index.php" class="<?= $linkClass2 ?>"><span class="<?= getCurrenPage() === 'about-us' ? 'active' : ''; ?>">О нас</span></a></li>
+                <li><a href="/pages/cases/index.php" class="<?= $linkClass2 ?>"><span class="<?= getCurrenPage() === 'cases' ? 'active' : ''; ?>">Кейсы и отзывы</span></a></li>
             </ul>
         </div>
     </div>
