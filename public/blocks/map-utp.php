@@ -3,7 +3,7 @@
     $img = "mb-6 aspect-square w-[70px]";
 ?>
 
-<div class="sm:container px-[0.5rem] mt-[40px] mb-[50px] sm:mb-[70px] md:mb-[100px] lg:mb-[120px] xl:mb-[150px]">
+<div class="gsap-block sm:container px-[0.5rem] mt-[40px] mb-[50px] sm:mb-[70px] md:mb-[100px] lg:mb-[120px] xl:mb-[150px]">
     <div class="bg-white rounded-[15px] p-3 sm:rounded-[25px] lg:rounded-[30px] xl:rounded-[40px]">
 
         <div class="flex flex-wrap mb-10">
@@ -42,6 +42,13 @@
 
         <div id="map" class="relative flex items-center justify-center px-[10px] pb-[20px] md:px-[20px] lg:px-[40px] lg:mt-[50px] xl:mt-[50px] 2xl:mt-[70px]">
 
+            <?php $city = "absolute bg-[#F2F6FF] z-30 text-sm text-[#1450D0] py-1 px-2 rounded-full sm:text-lg"; ?>
+            <span class="<?= $city ?> -top-[5%] md:top-[40%]">Россия</span>
+            <span class="<?= $city ?> top-[30%] left-[5%] sm:top-[35%] lg:top-[43%] xl:left-[17%]">Беларусь</span>
+            <span class="<?= $city ?> top-[65%] left-[40%] sm:left-[35%]">Казахстан</span>
+            <span class="<?= $city ?> top-[85%] left-[4%] sm:left-[10%] lg:top-[87%] lg:left-[24%]">Кыргызстан</span>
+            <span class="<?= $city ?> -bottom-[3%] left-[44%] sm:bottom-0 sm:left-[40%] lg:bottom-[6%] lg:left-[40%]">Узбекистан</span>
+
             <img class="absolute z-10 -bottom-[10px] w-full hidden xl:flex" src="<?= ASSETS_URL ?>/img/map-utp/planet.svg" alt="planet" />
 
             <svg class="relative z-20 xl:max-w-[1000px] 2xl:max-w-[1200px]" viewBox="0 0 855 461" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -61,3 +68,9 @@
         </div>
     </div>
 </div>
+
+<style>
+    #map-rus {
+
+    }
+</style>

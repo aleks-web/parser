@@ -6,7 +6,7 @@
     $desc = "z-10 relative text-[14px] text-[#5A575F] font-normal z-10 sm:text-[16px] md:text-[18px]";
 ?>
 
-<div class="py-12
+<div class="gsap-block py-12
             sm:pb-20 sm:pt-20
             lg:pb-28 lg:pt-20
             xl:pt-20

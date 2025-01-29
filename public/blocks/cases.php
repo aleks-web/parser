@@ -1,11 +1,10 @@
-<div class="container">
+<div class="gsap-block container">
     <div class="bg-white rounded-[20px] p-2">
         <div class="flex flex-col">
             <span class="bg-[#FAFAFA] text-[#1450D0] text-[20px] text-center font-medium py-[10px] p-[10px] px-[40px] rounded-[30px]">Описание</span>
 
             <div class="flex flex-col">
                 <span class="text-[#1450D0] text-2xl font-semibold uppercase p-[20px]">Louis Vuitton</span>
-
                 <span class="text-xl px-[20px] pb-[20px]">Спарсили более 35 000 товаров с Яндекс.Маркет</span>
             </div>
         </div>

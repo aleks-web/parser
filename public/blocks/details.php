@@ -2,10 +2,10 @@
     $folderImg = ASSETS_URL . "/img/file.svg";
 ?>
 
-<div class="sm:container px-[0.5rem]">
+<div class="gsap-block sm:container px-[0.5rem]">
     <?php $detailWhiteTitle = "title-white xl:rounded-20"; ?>
 
-    <div class="my-10">
+    <div class="my-10 flex flex-wrap">
         <span class="title-blue">Заказывайте и вы</span>
         <span class="<?= $detailWhiteTitle ?>">профессиональный,</span>
         <span class="<?= $detailWhiteTitle ?>">быстрый и точный парсинг</span>
@@ -42,7 +42,7 @@
 
             <div class="flex flex-col justify-center">
                 <span class="text-[#5A575F] text-xs xl:text-lg xl:leading-6">КПП</span>
-                <span class="text-[#5A575F] text-sm font-bold sm:text-lg xl:text-2xl xl:leading-6">6665801001</span>
+                <span class="text-[#5A575F] text-sm font-bold sm:text-lg xl:text-2xl xl:leading-6">665801001</span>
             </div>
         </div>
 
@@ -60,7 +60,7 @@
 
             <div class="flex flex-col justify-center">
                 <span class="text-[#5A575F] text-xs xl:text-lg xl:leading-6">ТЕЛЕФОН</span>
-                <span class="text-[#5A575F] text-sm font-bold sm:text-lg xl:text-2xl xl:leading-6">+7 (925) 511-01-94</span>
+                <span class="text-[#5A575F] text-sm font-bold sm:text-lg xl:text-2xl xl:leading-6"><?= $_ENV['PHONE']; ?></span>
             </div>
         </div>
 
@@ -69,7 +69,7 @@
 
             <div class="flex flex-col justify-center">
                 <span class="text-[#5A575F] text-xs xl:text-lg xl:leading-6">ПОЧТА</span>
-                <span class="text-[#5A575F] text-sm font-bold sm:text-lg xl:text-2xl xl:leading-6">ak@gmtorg.ru</span>
+                <span class="text-[#5A575F] text-sm font-bold sm:text-lg xl:text-2xl xl:leading-6"><?= $_ENV['EMAIL']; ?></span>
             </div>
         </div>
 

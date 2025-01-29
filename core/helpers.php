@@ -65,4 +65,32 @@ function getDescription() {
             break;
     }
 }
+
+function getPageUrl(string $pageName) : string|null {
+    $pageUrl = null;
+
+    switch ($pageName) {
+        case 'main':
+            $pageUrl = '/';
+            break;
+        case 'price':
+            $pageUrl = '/pages/price/index.php';
+            break;
+        case 'order-parsing':
+            $pageUrl = '/pages/order-parsing/index.php';
+            break;
+        case 'about-us':
+            $pageUrl = '/pages/about-us/index.php';
+            break;
+        case 'cases':
+            $pageUrl = '/pages/cases/index.php';
+            break;
+    }
+
+    return $pageUrl;
+}
+
+function clearPhone ($phone) {
+    return str_replace([' ', '(', ')', '-'], '', $_ENV['PHONE']);
+}
 ?>

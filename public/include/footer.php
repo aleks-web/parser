@@ -1,4 +1,4 @@
-<div class="grid text-white pt-14
+<div class="gsap-block grid text-white pt-14 relative z-20
             lg:grid-cols-2">
 
     <div class="bg-[--main-clr] rounded-[40px] p-4 sm:flex sm:items-center sm:justify-center md:py-10 md:gap-10 lg:flex-col lg:rounded-bl-[0] lg:rounded-tl-[0]">
@@ -21,17 +21,17 @@
             <div class="flex flex-col items-start gap-3">
                 <div class="flex items-center gap-3 text-[16px] md:text-[18px] hover:text-white transition-all">
                     <svg class="aspect-square w-5"><use xlink:href="#svg-phone"></use></svg>
-                    <a target="_blank" href="tel:79255110194">+7 (925) 511-01-94</a>
+                    <a target="_blank" href="tel:<?= clearPhone($_ENV['PHONE']) ?>"><?= $_ENV['PHONE'] ?></a>
                 </div>
 
                 <div class="flex items-center gap-3 text-[16px] md:text-[18px] hover:text-white transition-all">
                     <svg class="aspect-square w-5"><use xlink:href="#svg-email"></use></svg>
-                    <a target="_blank" href="mailto:ak@gmtorg.ru">ak@gmtorg.ru</a>
+                    <a target="_blank" href="mailto:<?= $_ENV['EMAIL'] ?>"><?= $_ENV['EMAIL'] ?></a>
                 </div>
 
                 <div class="flex items-center gap-3 text-[16px] md:text-[18px] hover:text-white transition-all">
                     <svg class="aspect-square w-5"><use xlink:href="#svg-whatsapp"></use></svg>
-                    <a target="_blank" href="https://wa.me/79255110194">Написать в WhatsApp</a>
+                    <a target="_blank" href="https://wa.me/<?= clearPhone($_ENV['PHONE']) ?>">Написать в WhatsApp</a>
                 </div>
             </div>
         </div>
@@ -50,15 +50,15 @@
 <div class="footer py-16 bg-[#292929] text-[white] font-bold text-[20px] relative z-20">
     <div class="container">
         <ul class="flex flex-col uppercase gap-4 sm:grid sm:grid-cols-2 md:flex md:flex-row md:justify-center md:gap-20 lg:gap-32 xl:gap-44">
-            <li><a class="hover:text-[#E6F7FF] transition-all" href="/pages/price/index.php">Цены</a></li>
+            <li><a class="hover:text-[#E6F7FF] transition-all" href="<?= getPageUrl('price') ?>">Цены</a></li>
             <li>
-                <a class="hover:text-[#E6F7FF] transition-all" href="/pages/order-parsing/index.php" class="flex gap-6 justify-start items-center md:inline">
+                <a class="hover:text-[#E6F7FF] transition-all" href="<?= getPageUrl('order-parsing') ?>" class="flex gap-6 justify-start items-center md:inline">
                     <span>Заказать парсинг</span>
                     <svg class="w-4 h-4 md:hidden"><use xlink:href="#svg-right-arrow"></use></svg>
                 </a>
             </li>
-            <li><a class="hover:text-[#E6F7FF] transition-all" href="/pages/about-us/index.php">О нас</a></li>
-            <li><a class="hover:text-[#E6F7FF] transition-all" href="/pages/cases/index.php">Кейсы и отзывы</a></li>
+            <li><a class="hover:text-[#E6F7FF] transition-all" href="<?= getPageUrl('about-us') ?>">О нас</a></li>
+            <li><a class="hover:text-[#E6F7FF] transition-all" href="<?= getPageUrl('cases') ?>">Кейсы и отзывы</a></li>
         </ul>
 
         <div class="text-[#656565] mt-10 text-center">parsing-data.ru | 2019-<?= date('Y') ?></div>

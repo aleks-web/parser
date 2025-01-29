@@ -9,14 +9,14 @@
 
     <body class="relative w-full overflow-x-hidden">
         <?php  includeBlock('header'); ?>
-        <?php // includeBlock('main-banner'); ?>
-        <?php // includeBlock('what-data-collect'); ?>
-        <?php // includeBlock('scen'); ?>
+        <?php includeBlock('main-banner'); ?>
+        <?php includeBlock('what-data-collect'); ?>
+        <?php includeBlock('scen'); ?>
 
 
         <div class="bg-white">
-            <?php // includeBlock('parser-data-can'); ?>
-            <?php // includeBlock('reasons'); ?>
+            <?php includeBlock('parser-data-can'); ?>
+            <?php includeBlock('reasons'); ?>
             <?php includeBlock('faq'); ?>
             <?php includeInc('footer'); ?>
         </div>

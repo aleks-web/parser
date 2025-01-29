@@ -5,7 +5,14 @@
     $num = "text-[#2264F0] text-[40px] font-black italic sm:text-[50px] md:text-[60px] xl:text-[80px] xl:leading-[60px] xl:mt-2 xl:mb-10";
 ?>
 
-<div class="sm:container px-[0.5rem] relative page-banner">
+<div class="gsap-block sm:container px-[0.5rem] relative page-banner lg:static">
+
+    <img src="<?= ASSETS_URL ?>/img/head-monitor.webp" class="hidden absolute -z-10 aspect-square md:h-auto
+                md:block md:-right-[180px] md:top-[95px] md:h-[800px]
+                lg:block lg:-right-[70px] lg:top-[100px] lg:h-[1000px]
+                xl:block xl:-right-[70px] xl:top-[100px] xl:h-[900px]
+                2xl:block 2xl:-right-[100px] 2xl:top-[20px] 2xl:h-[45svw] 2xl:z-20
+                ">
 
     <div class="flex flex-wrap">
         <span class="title-blue">Parsing</span>
@@ -21,7 +28,7 @@
     </div>
 
 
-    <div class="grid gap-4 md:grid-cols-2 xl:flex">
+    <div class="grid gap-4 md:grid-cols-2 xl:flex z-20 relative">
         <div class="<?= $item ?>">
             <span class="<?= $num ?>">5</span>
 

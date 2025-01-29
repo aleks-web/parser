@@ -1,4 +1,4 @@
-<div class="container py-12">
+<div class="gsap-block container py-12">
     <div class="flex flex-wrap mb-10">
         <span class="title-white">Благодаря парсингу данных</span>
         <span class="title-blue">ВЫ СМОЖЕТЕ</span>

@@ -1,4 +1,4 @@
-<div class="sm:container px-[0.5rem] relative z-20 py-12 sm:py-20 lg:py-28 2xl:py-32">
+<div class="gsap-block sm:container px-[0.5rem] relative z-20 py-12 sm:py-20 lg:py-28 2xl:py-32">
     <div class="flex flex-wrap mb-10">
         <span class="title-blue">Любые сценарии</span>
         <span class="title-white">для ваших задач</span>

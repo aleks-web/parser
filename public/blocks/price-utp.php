@@ -1,4 +1,4 @@
-<div class="sm:container mt-8 mb-20 mx-[0.5rem] z-20 relative
+<div class="gsap-block sm:container mt-8 mb-20 mx-[0.5rem] z-20 relative
             lg:mb-28
             xl:mt-10">
     <div class="bg-white p-3 rounded-2xl">
