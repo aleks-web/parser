@@ -13,7 +13,7 @@
 
     $content = "flex flex-col xl:w-1/3";
 
-    $splideBlock = "{$varRounded} overflow-hidden";
+    $splideTrack = "{$varRounded} overflow-hidden";
 ?>
 
 <div class="sm:container px-[0.5rem] page-banner">
@@ -45,8 +45,8 @@
 
                     <div class="<?= $spanWrap2 ?>">
 
-                        <div class="splide splide-case <?= $splideBlock ?>">
-                            <div class="splide__track">
+                        <div class="splide splide-case">
+                            <div class="splide__track <?= $splideTrack ?>">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
                                         <img src="<?= ASSETS_URL ?>/img/photo/photo-1.jpg" class="w-full aspect-[2/1] xl:aspect-square object-cover" alt="" />
@@ -60,9 +60,9 @@
                                 </ul>
                             </div>
 
-                            <div class="splide__arrows splide-case__arrows flex justify-between">
-                                <button class="splide__arrow splide__arrow--prev splide-case__arrow--prev static w-full rounded-none block">Назад</button>
-                                <button class="splide__arrow splide__arrow--next splide-case__arrow--next static w-full rounded-none block">Вперед</button>
+                            <div class="splide__arrows splide-case__arrows flex justify-between mt-4 <?= $varRounded; ?> overflow-hidden">
+                                <button class="splide__arrow splide__arrow--prev splide-case__arrow--prev static w-full rounded-none h-auto translate-y-0 p-2 py-4 flex items-center justify-center bg-[unset] border"><img src="<?= ASSETS_URL ?>/img/arrow-right.svg" alt="arrow" class="-rotate-180 w-[20px] aspect-square"></button>
+                                <button class="splide__arrow splide__arrow--next splide-case__arrow--next static w-full rounded-none h-auto translate-y-0 p-2 py-4 flex items-center justify-center bg-[unset]"><img src="<?= ASSETS_URL ?>/img/arrow-right.svg" alt="arrow" class="w-[20px] aspect-square"></button>
                             </div>
                         </div>
 
@@ -111,7 +111,7 @@
 
         </div>
 
-        <div class="mt-[45px] cursor-pointer text-center flex flex-col items-center gap-2 px-6 py-2 border border-[#5A575F] <?= $varRounded ?> w-full flex justify-center s:flex-row s:gap-5 s:w-auto xl:px-40">
+        <div class="mt-[45px] cursor-pointer text-center flex flex-col items-center gap-2 px-6 py-2 border border-[#5A575F] <?= $varRounded ?> w-full flex justify-center s:flex-row s:gap-5 s:w-max s:mx-auto xl:px-32">
             <span class="text-[#5A575F] text-xl font-medium uppercase">Показать ещё</span>
 
             <img src="<?= ASSETS_URL ?>/img/arrow-right.svg" alt="arrow" class="rotate-90 w-[20px] aspect-square">

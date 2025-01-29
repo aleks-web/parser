@@ -1052,6 +1052,10 @@ body {
   margin-top: 45px;
 }
 
+.box-border {
+  box-sizing: border-box;
+}
+
 .box-content {
   box-sizing: content-box;
 }
@@ -1146,6 +1150,10 @@ body {
 
 .h-\[20px\] {
   height: 20px;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .max-h-10 {
@@ -1326,6 +1334,16 @@ body {
   max-width: max-content;
 }
 
+.translate-y-4 {
+  --tw-translate-y: 1rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-0 {
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .-rotate-180 {
   --tw-rotate: -180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1333,6 +1351,21 @@ body {
 
 .rotate-90 {
   --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-45 {
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.-rotate-90 {
+  --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1678,6 +1711,18 @@ body {
 .bg-\[red\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[none\] {
+  background-color: none;
+}
+
+.bg-\[unset\] {
+  background-color: unset;
+}
+
+.bg-none {
+  background-image: none;
 }
 
 .object-cover {
@@ -2243,6 +2288,19 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.disabled\:bg-white:disabled {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.disabled\:bg-\[none\]:disabled {
+  background-color: none;
+}
+
+.disabled\:bg-\[unset\]:disabled {
+  background-color: unset;
+}
+
 .group.header-mobile .group-\[\.header-mobile\]\:my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -2328,9 +2386,18 @@ body {
     top: -20px;
   }
 
+  .s\:m-auto {
+    margin: auto;
+  }
+
   .s\:my-6 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+
+  .s\:mx-auto {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .s\:mb-1 {
@@ -2355,6 +2422,23 @@ body {
 
   .s\:w-auto {
     width: auto;
+  }
+
+  .s\:w-\[auto\] {
+    width: auto;
+  }
+
+  .s\:w-0 {
+    width: 0px;
+  }
+
+  .s\:w-\[none\] {
+    width: none;
+  }
+
+  .s\:w-max {
+    width: -moz-max-content;
+    width: max-content;
   }
 
   .s\:min-w-10 {
@@ -3503,6 +3587,11 @@ body {
   .xl\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
+  }
+
+  .xl\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .xl\:pl-\[50px\] {
