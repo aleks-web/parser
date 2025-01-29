@@ -7,7 +7,7 @@
         <?php include("../../include/head.php"); ?>
     </head>
 
-    <body class="relative w-full overflow-x-hidden">
+    <body class="relative w-full overflow-x-hidden pt-[10svw]">
         <?php includeBlock('header'); ?>
         <?php includeBlock('price-banner'); ?>
         <?php includeBlock('price-utp'); ?>

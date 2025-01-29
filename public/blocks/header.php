@@ -1,6 +1,7 @@
-<div id="header" class="group w-full relative z-40">
-    <div class="my-4 w-full sm:my-6 xl:my-10
-                group-[.header-mobile]:py-4 group-[.header-mobile]:my-0 group-[.header-mobile]:bg-white md:group-[.header-mobile]:shadow-md md:group-[.header-mobile]:shadow-[#F2F6FF]">
+<div id="header" class="group w-full fixed top-0 left-0 z-40 bg-[#F2F6FF] md:bg-[none]">
+    <div class="my-4 w-full
+                sm:my-6 xl:my-10
+                group-[.header-mobile]:py-4 group-[.header-mobile]:my-0 group-[.header-mobile]:bg-white group-[.header-mobile]:shadow-md group-[.header-mobile]:shadow-[#F2F6FF] transition-all ease-out">
 
         <div class="sm:container px-[0.5rem]">
             <div class="flex justify-between gap-4
@@ -49,7 +50,7 @@
                     </div>
 
                     <div class="hidden md:flex group-[.header-mobile]:h-[100%] group-[.header-mobile]:items-center">
-                        <ul class="flex gap-4 font-bold text-sm uppercase -ml-2 -mb-3 group-[.header-mobile]:mb-[5px] lg:gap-16 xl:gap-32">
+                        <ul class="flex gap-4 font-bold text-sm uppercase -ml-2 -mb-3 group-[.header-mobile]:-mb-[5px] lg:gap-16 xl:gap-32">
                             <?php $linkClass = 'peer block hover:text-gray-600 hover:border-gray-600 border border-transparent transition-all ease-in delay-100 text-gray-600 rounded-lg min-w-max p-2
                                                 lg:text-lg lg:rounded-xl
                                                 xl:text-xl

@@ -110,3 +110,17 @@ document.addEventListener('DOMContentLoaded', () => {
    }
 
 });
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+   let splide = document.querySelector('.splide-case');
+
+   if (!!splide === false) {
+      return;
+   }
+
+   const splideCollect = new Splide(splide, { type: 'fade', pagination: false }).mount();
+
+});

@@ -16,6 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const mainBanner = document.querySelector('.main-banner');
+
+    if (!!mainBanner === false) {
+        return;
+    }
+
     const mainBannerDesc = mainBanner.querySelector('.main-banner__desc');
     const mainBannerDesc2 = mainBanner.querySelector('.main-banner__desc2');
 
@@ -87,28 +92,12 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', function() {
         const header = document.getElementById('header');
-        const scrollTop = 400;
+        const scrollTop = 1;
 
         if (window.scrollY > scrollTop && header.classList.contains('header-mobile') === false) {
             header.classList.add('header-mobile');
-
-            gsap.fromTo(header, {
-                position: 'fixed',
-                top: '-100px'
-            }, {
-                top: 0
-            });
-
         } else if (window.scrollY < scrollTop && header.classList.contains('header-mobile')) {
             header.classList.remove('header-mobile');
-
-            gsap.fromTo(header, {
-                position: 'fixed',
-                top: 0
-            }, {
-                position: 'relative',
-                top: 0
-            });
         }
     });
 });

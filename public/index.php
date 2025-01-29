@@ -7,7 +7,7 @@
         <?php includeInc("head"); ?>
     </head>
 
-    <body class="relative w-full overflow-x-hidden">
+    <body class="relative w-full overflow-x-hidden pt-[10svw]">
         <?php  includeBlock('header'); ?>
         <?php includeBlock('main-banner'); ?>
         <?php includeBlock('what-data-collect'); ?>

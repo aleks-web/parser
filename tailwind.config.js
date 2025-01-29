@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./public/blocks/*.php", "./public/include/*.php", "./public/pages/**/*.php"],
+  content: ["./public/blocks/*.php", "./public/include/*.php", "./public/pages/**/*.php", "./public/**/*.php"],
   theme: {
     container: {
       center: true,

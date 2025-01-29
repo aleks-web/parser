@@ -1,34 +1,121 @@
-<div class="gsap-block container">
-    <div class="bg-white rounded-[20px] p-2">
-        <div class="flex flex-col">
-            <span class="bg-[#FAFAFA] text-[#1450D0] text-[20px] text-center font-medium py-[10px] p-[10px] px-[40px] rounded-[30px]">Описание</span>
+<?php
+    $varContentSaceX = "mx-2";
+    $varRounded = "rounded-[30px] xl:rounded-[20px]";
 
-            <div class="flex flex-col">
-                <span class="text-[#1450D0] text-2xl font-semibold uppercase p-[20px]">Louis Vuitton</span>
-                <span class="text-xl px-[20px] pb-[20px]">Спарсили более 35 000 товаров с Яндекс.Маркет</span>
-            </div>
-        </div>
+    $title = "bg-[#FAFAFA] text-[#1450D0] text-[18px] text-center font-medium py-4 py-[8px] {$varRounded} sm:text-[20px] sm:py-[10px]";
+    $title2 = $title . " xl:hidden";
+    $card = "bg-white even:bg-[#F2F6FF] {$varRounded} xl:flex xl:gap-5";
 
-        <div class="flex flex-col">
-            <span class="bg-[#FAFAFA] text-[#1450D0] text-[20px] text-center font-medium py-[10px] p-[10px] px-[40px] rounded-[30px]">Детали</span>
+    $spanWrap = "flex flex-col mb-6 mt-4 {$varContentSaceX} sm:mt-8 xl:mt-3";
+    $spanWrap2 = "flex flex-col mb-6 mt-4 {$varContentSaceX} sm:mt-8 xl:mt-3";
+    $spanName = "block text-[#1450D0] text-xl font-semibold uppercase sm:text-2xl xl:pb-5 xl:{$varContentSaceX}";
+    $spanDesc = "text-md xl:text-justify sm:text-lg";
 
-            <div class="flex flex-col">
-                <span class="text-xl px-[20px] pb-[20px]">Заказчику требовалось спарсить название, описание, ссылки на фото, основные характеристики с сайта Яндекс.Маркет. Выполнили данную работу за 5 рабочих дней, предоставили заказчику более 35 000 товаров в виде удобной таблицы для дальнейшей обработки.</span>
-            </div>
-        </div>
+    $content = "flex flex-col xl:w-1/3";
 
-        <div class="flex flex-col">
-            <span class="bg-[#FAFAFA] text-[#1450D0] text-[20px] text-center font-medium py-[10px] p-[10px] px-[40px] rounded-[30px]">Изображения</span>
+    $splideBlock = "{$varRounded} overflow-hidden";
+?>
 
-            <div class="flex flex-col">
-                <img src="<?= ASSETS_URL ?>/img/photo/photo-1.jpg" alt="" class="w-[310px] h-[310px] rounded-[20px]">
+<div class="sm:container px-[0.5rem] page-banner">
+    <div class="bg-white rounded-[30px] p-2 pb-6 xl:p-8">
+        <div class="flex justify-center items-center flex-wrap gap-[30px] s:gap-[40px] sm:gap-[70px] md:gap-[90px]">
 
-                <div>
-                    <div class="border-[#5A575F] border">
-                        <img src="<?= ASSETS_URL ?>/img/arrow-right.svg">
+            <div class="<?= $card ?>">
+                <div class="<?= $content; ?>">
+                    <span class="<?= $title ?>">Описание</span>
+
+                    <div class="<?= $spanWrap ?>">
+                        <span class="<?= $spanName ?>">Louis Vuitton</span>
+
+                        <span class="<?= $spanDesc ?>">Спарсили более 35 000 товаров с Яндекс.Маркет</span>
+                    </div>
+                </div>
+
+                <div class="<?= $content; ?>">
+                    <span class="<?= $title ?>">Детали</span>
+
+
+                    <div class="<?= $spanWrap2 ?>">
+                        <span class="<?= $spanDesc ?>">Заказчику требовалось спарсить название, описание, ссылки на фото, основные характеристики с сайта Яндекс.Маркет. Выполнили данную работу за 5 рабочих дней, предоставили заказчику более 35 000 товаров в виде удобной таблицы для дальнейшей обработки.</span>
+                    </div>
+                </div>
+
+                <div class="<?= $content; ?>">
+                    <span class="<?= $title ?>">Изображения</span>
+
+                    <div class="<?= $spanWrap2 ?>">
+
+                        <div class="splide splide-case <?= $splideBlock ?>">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="<?= ASSETS_URL ?>/img/photo/photo-1.jpg" class="w-full aspect-[2/1] xl:aspect-square object-cover" alt="" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="<?= ASSETS_URL ?>/img/photo/photo-1.jpg" class="w-full aspect-[2/1] xl:aspect-square object-cover" alt="" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="<?= ASSETS_URL ?>/img/photo/photo-1.jpg" class="w-full aspect-[2/1] xl:aspect-square object-cover" alt="" />
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="splide__arrows splide-case__arrows flex justify-between">
+                                <button class="splide__arrow splide__arrow--prev splide-case__arrow--prev static w-full rounded-none block">Назад</button>
+                                <button class="splide__arrow splide__arrow--next splide-case__arrow--next static w-full rounded-none block">Вперед</button>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
+
+            <div class="<?= $card ?>">
+                <div class="<?= $content; ?>">
+                    <span class="<?= $title2 ?>">Описание</span>
+
+                    <div class="<?= $spanWrap ?>">
+                        <span class="<?= $spanName ?>">Louis Vuitton</span>
+
+                        <span class="<?= $spanDesc ?>">Спарсили более 35 000 товаров с Яндекс.Маркет</span>
+                    </div>
+                </div>
+
+                <div class="<?= $content; ?>">
+                    <span class="<?= $title2 ?>">Детали</span>
+
+
+                    <div class="<?= $spanWrap2 ?>">
+                        <span class="<?= $spanDesc ?>">Заказчику требовалось спарсить название, описание, ссылки на фото, основные характеристики с сайта Яндекс.Маркет. Выполнили данную работу за 5 рабочих дней, предоставили заказчику более 35 000 товаров в виде удобной таблицы для дальнейшей обработки.</span>
+                    </div>
+                </div>
+
+                <div class="<?= $content; ?>">
+                    <span class="<?= $title2 ?>">Изображения</span>
+
+                    <div class="<?= $spanWrap2 ?>">
+
+                        <div class="splide splide-case <?= $splideBlock ?>">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="<?= ASSETS_URL ?>/img/photo/photo-1.jpg" class="w-full aspect-[2/1] xl:aspect-square object-cover" alt="" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-[45px] cursor-pointer text-center flex flex-col items-center gap-2 px-6 py-2 border border-[#5A575F] <?= $varRounded ?> w-full flex justify-center s:flex-row s:gap-5 s:w-auto xl:px-40">
+            <span class="text-[#5A575F] text-xl font-medium uppercase">Показать ещё</span>
+
+            <img src="<?= ASSETS_URL ?>/img/arrow-right.svg" alt="arrow" class="rotate-90 w-[20px] aspect-square">
         </div>
     </div>
+
 </div>
