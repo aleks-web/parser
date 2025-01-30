@@ -1,12 +1,11 @@
-<div class="md:relative 2xl:static sm:container px-[0.5rem] page-banner">
+<div class="md:relative sm:container px-[0.5rem] page-banner">
 
 
-        <img src="<?= ASSETS_URL ?>/img/head-monitor-2.webp" class="hidden absolute -z-10 aspect-square
-                md:block md:-right-[120px] md:-top-[148px] md:h-[185%]
-                lg:-right-[260px] lg:-top-[150px] lg:h-[280%]
-                xl:-right-[150px] xl:-top-[275px] xl:h-[225%]
-                2xl:right-0 2xl:-top-[40px] 2xl:h-[70%]
-                " loading="lazy" decoding="async">
+        <img src="<?= ASSETS_URL ?>/img/head-monitor.webp" loading="lazy" decoding="async" class="hidden absolute -z-10
+                md:block md:-right-[250px] md:-top-[10px] md:w-[500px]
+                lg:-right-[280px] lg:-top-[40px] lg:w-[600px]
+                xl:-right-[370px] xl:-top-[150px] xl:w-[850px]
+                2xl:-right-[370px] 2xl:-top-[220px] 2xl:w-[1000px]">
 
     <h1 class="flex flex-col relative z-20">
         <span class="title-blue">Стоимость парсинга сайтов</span>

@@ -29,7 +29,7 @@
                             $link = "flex items-center gap-2 text-[#5A575F] transition-all hover:text-[--main-clr] md:group-[.header-mobile]:hidden";
                         ?>
 
-                        <a href="https://wa.me/<?= clearPhone($_ENV['PHONE']) ?>" class="<?= $link; ?>">
+                        <a href="https://wa.me/<?= clearPhone($_ENV['PHONE']) ?>" target="_blank" class="<?= $link; ?>">
                             <svg class="<?= $svgIcon; ?>"><use xlink:href="#svg-whatsapp"></use></svg>
                             <span class="hidden md:block">Написать в WhatsApp</span>
                         </a>

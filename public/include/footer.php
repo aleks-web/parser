@@ -50,7 +50,8 @@
         <div class="bg-[#5A575F] text-[#EDEBF0] flex-1 mr-auto flex flex-col justify-center items-center gap-5 py-6 px-4 rounded-t-[40px] sm:rounded-l-[40px] sm:rounded-r-[0] md:pl-8">
             <div class="flex flex-col gap-4 items-center max-w-max lg:flex-col lg:justify-center lg:max-w-[500px] xl:max-w-[600px]">
                 <div class="text-center text-[16px] md:text-[18px] lg:text-center xl:text-[22px]">Или заполните форму, а мы оперативно рассчитаем стоимость и свяжемся с вами для уточнения подробностей</div>
-                <button class="uppercase bg-white text-[--main-clr] font-bold py-2 px-4 rounded-full flex items-center gap-3 min-w-max sm:text-[20px] lg:min-w-full lg:justify-center xl:py-3 xl:text-[22px] hover:bg-[--main-clr] hover:text-white transition-all">Заполнить форму <svg class="aspect-square w-[15px] -mt-1"><use xlink:href="#svg-arrow-up"></use></svg></button>
+
+                <a href="<?= getPageUrl('order-parsing'); ?>" class="uppercase bg-white text-[--main-clr] font-bold py-2 px-4 rounded-full flex items-center gap-3 min-w-max sm:text-[20px] lg:min-w-full lg:justify-center xl:py-3 xl:text-[22px] hover:bg-[--main-clr] hover:text-white transition-all">Заполнить форму <svg class="aspect-square w-[15px] -mt-1"><use xlink:href="#svg-arrow-up"></use></svg></a>
             </div>
         </div>
     </div>

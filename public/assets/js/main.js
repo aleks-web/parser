@@ -123,3 +123,48 @@ document.addEventListener('DOMContentLoaded', () => {
       const splideCollect = new Splide(el, { type: 'fade', pagination: false }).mount();
    });
 });
+
+
+/*
+* Checkbox group
+* */
+document.addEventListener('DOMContentLoaded', () => {
+   const groupsCheckbox = document.querySelectorAll('.group-checkbox');
+
+   if (groupsCheckbox.length === 0) {
+      return;
+   }
+
+   groupsCheckbox.forEach(el => {
+
+      el.querySelectorAll('.checkbox').forEach(check => {
+
+         check.addEventListener('click', handleCheckboxClick.bind(el));
+
+      });
+
+   });
+
+   function handleCheckboxClick (event) {
+      const element = event.currentTarget;
+      const checkboxInput = this.querySelector('.group-checkbox-input');
+
+      let input = null;
+
+      if (element.nodeName !== "INPUT") {
+         input = element.querySelector('input');
+      } else {
+         input = element;
+      }
+
+      let allInputs = this.querySelectorAll('.checkbox input');
+
+      for (let inp of allInputs) {
+         inp.checked = false;
+      }
+
+      input.checked = true;
+      checkboxInput.value = input.value;
+   }
+
+});
