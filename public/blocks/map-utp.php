@@ -18,22 +18,22 @@
                     s:grid-cols-2
                     lg:grid-cols-4">
             <div class="<?= $item ?>">
-                <img src="<?= ASSETS_URL ?>/img/map-utp/1.svg" alt="1" class="<?= $img ?>" loading="lazy" />
+                <img src="<?= ASSETS_URL ?>/img/map-utp/1.svg" alt="1" class="<?= $img ?>" loading="lazy" decoding="async" />
                 <span>Сбор <strong>цен, скидок, наличия</strong> для выставления максимально конкурентных цен</span>
             </div>
 
             <div class="<?= $item ?>">
-                <img src="<?= ASSETS_URL ?>/img/map-utp/2.svg" alt="2" class="<?= $img ?>" loading="lazy" />
+                <img src="<?= ASSETS_URL ?>/img/map-utp/2.svg" alt="2" class="<?= $img ?>" loading="lazy" decoding="async" />
                 <span>Сбор <strong>отзывов и комментариев</strong> для управления репутацией</span>
             </div>
 
             <div class="<?= $item ?>">
-                <img src="<?= ASSETS_URL ?>/img/map-utp/3.svg" alt="3" class="<?= $img ?>" loading="lazy" />
+                <img src="<?= ASSETS_URL ?>/img/map-utp/3.svg" alt="3" class="<?= $img ?>" loading="lazy" decoding="async" />
                 <span>Сбор <strong>контактных данных</strong> для составления клиентских баз</span>
             </div>
 
             <div class="<?= $item ?>">
-                <img src="<?= ASSETS_URL ?>/img/map-utp/4.svg" alt="4" class="<?= $img ?>" loading="lazy" />
+                <img src="<?= ASSETS_URL ?>/img/map-utp/4.svg" alt="4" class="<?= $img ?>" loading="lazy" decoding="async" />
                 <span>Сбор <strong>названий, характеристик, описаний товаров,</strong> чтобы быстро расширить ассортимент магазина</span>
             </div>
         </div>
@@ -49,7 +49,7 @@
             <span class="<?= $city ?> top-[85%] left-[4%] sm:left-[10%] lg:top-[87%] lg:left-[24%]">Кыргызстан</span>
             <span class="<?= $city ?> -bottom-[3%] left-[44%] sm:bottom-0 sm:left-[40%] lg:bottom-[6%] lg:left-[40%]">Узбекистан</span>
 
-            <img class="absolute z-10 -bottom-[10px] w-full hidden xl:flex" src="<?= ASSETS_URL ?>/img/map-utp/planet.svg" alt="planet" loading="lazy" />
+            <img class="absolute z-10 -bottom-[10px] w-full hidden xl:flex" src="<?= ASSETS_URL ?>/img/map-utp/planet.svg" alt="planet" loading="lazy" decoding="async" />
 
             <svg class="relative z-20 xl:max-w-[1000px] 2xl:max-w-[1200px]" viewBox="0 0 855 461" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#clip0_6584_12948)">

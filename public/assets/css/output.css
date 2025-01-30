@@ -1525,6 +1525,16 @@ body {
   border-bottom-left-radius: 40px;
 }
 
+.rounded-r-\[20px\] {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.rounded-l-\[20px\] {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
 .border {
   border-width: 1px;
 }
@@ -1539,6 +1549,10 @@ body {
 
 .border-b {
   border-bottom-width: 1px;
+}
+
+.border-r-0 {
+  border-right-width: 0px;
 }
 
 .border-solid {
@@ -1576,6 +1590,30 @@ body {
 
 .border-transparent {
   border-color: transparent;
+}
+
+.border-\[red\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 0 0 / var(--tw-border-opacity, 1));
+}
+
+.border-\[red\!important\] {
+  border-color: red !important;
+}
+
+.border-\[blue\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 255 / var(--tw-border-opacity, 1));
+}
+
+.border-sky-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(14 165 233 / var(--tw-border-opacity, 1));
+}
+
+.border-\[\#5a575f\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(90 87 95 / var(--tw-border-opacity, 1));
 }
 
 .bg-\[\#1450D0\] {
@@ -1706,6 +1744,11 @@ body {
 .bg-\[\#656565\] {
   --tw-bg-opacity: 1;
   background-color: rgb(101 101 101 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[red\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -2257,6 +2300,26 @@ body {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.disabled\:border-0:disabled {
+  border-width: 0px;
+}
+
+.disabled\:border-l-0:disabled {
+  border-left-width: 0px;
+}
+
+.disabled\:border-\[unset\]:disabled {
+  border-color: unset;
+}
+
+.disabled\:border-\[none\]:disabled {
+  border-color: none;
+}
+
+.disabled\:p-20:disabled {
+  padding: 5rem;
+}
+
 .group.header-mobile .group-\[\.header-mobile\]\:my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -2315,6 +2378,18 @@ body {
 .group.header-mobile .group-\[\.header-mobile\]\:shadow-\[\#F2F6FF\] {
   --tw-shadow-color: #F2F6FF;
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.peer\/left:disabled ~ .peer-disabled\/left\:border-l-0 {
+  border-left-width: 0px;
+}
+
+.peer\/right:disabled ~ .peer-disabled\/right\:p-10 {
+  padding: 2.5rem;
+}
+
+.peer\/left:disabled ~ .peer-disabled\/left\:p-10 {
+  padding: 2.5rem;
 }
 
 .has-\[input\:checked\]\:justify-end:has(input:checked) {

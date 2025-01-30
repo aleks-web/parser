@@ -12,7 +12,7 @@
                     lg:block lg:-right-[70px] lg:top-[100px] lg:h-[1000px]
                     xl:block xl:-right-[70px] xl:top-[100px] xl:h-[900px]
                     2xl:block 2xl:-right-[100px] 2xl:top-[20px] 2xl:h-[45svw] 2xl:z-20
-                    " loading="lazy">
+                    " loading="lazy" decoding="async">
 
     <div class="sm:container px-[0.5rem] relative page-banner lg:static">
 

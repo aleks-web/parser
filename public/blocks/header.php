@@ -10,7 +10,7 @@
                 <div class="flex items-center justify-center">
                     <a href="<?= getPageUrl('main') ?>">
                         <img class="w-[12svw] min-w-6 items-center aspect-square s:min-w-10 md:w-24 lg:w-32
-                                    md:group-[.header-mobile]:w-14" src="<?= ASSETS_URL; ?>/img/logo.svg" alt="logo" loading="lazy">
+                                    md:group-[.header-mobile]:w-14" src="<?= ASSETS_URL; ?>/img/logo.svg" alt="logo" loading="lazy" decoding="async">
                     </a>
                 </div>
 

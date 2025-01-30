@@ -48,7 +48,7 @@
         <?php foreach ($data as $key => $item) : ?>
             <div class="<?= $card ?>">
                 <span class="block w-full h-full bg-[#27272799] absolute top-0 left-0 -z-10 blur-2xl"></span>
-                <img src="<?= ASSETS_URL ?>/img/parser-data-can/<?= $item['img'] ?>" alt="<?= isset($item['title']) && !empty($item['title']) ? $item['title'] : 'image-' . $key ?>" class="h-[40px] w-[40px]" loading="lazy">
+                <img src="<?= ASSETS_URL ?>/img/parser-data-can/<?= $item['img'] ?>" alt="<?= isset($item['title']) && !empty($item['title']) ? $item['title'] : 'image-' . $key ?>" class="h-[40px] w-[40px]" loading="lazy" decoding="async">
 
                 <?php if (isset($item['title']) && !empty($item['title'])) : ?>
                     <span class="font-semibold text-[22px] text-[#ffffff] leading-5"><?= $item['title'] ?></span>

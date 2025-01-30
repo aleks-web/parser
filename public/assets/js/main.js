@@ -112,15 +112,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
 document.addEventListener('DOMContentLoaded', () => {
-   let splide = document.querySelector('.splide-case');
+   let splides = document.querySelectorAll('.splide-case');
 
-   if (!!splide === false) {
+   if (splides.length === 0) {
       return;
    }
 
-   const splideCollect = new Splide(splide, { type: 'fade', pagination: false }).mount();
-
+   splides.forEach(el => {
+      const splideCollect = new Splide(el, { type: 'fade', pagination: false }).mount();
+   });
 });

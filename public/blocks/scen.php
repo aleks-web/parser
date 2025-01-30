@@ -15,7 +15,7 @@
 
         <div class="<?= $item ?>">
             <div class="bg-[#E6F7FF] <?= $itemImg ?>">
-                <img src="<?= ASSETS_URL ?>/img/scene/scene-1.svg" alt="scene-1" class="min-w-12" loading="lazy">
+                <img src="<?= ASSETS_URL ?>/img/scene/scene-1.svg" alt="scene-1" class="min-w-12" loading="lazy" decoding="async">
             </div>
 
             <div class="flex flex-col justify-center gap-1.5">
@@ -26,7 +26,7 @@
 
         <div class="<?= $item ?>">
             <div class="bg-[#FFF1F0] <?= $itemImg ?>">
-                <img src="<?= ASSETS_URL ?>/img/scene/scene-2.png" alt="scene-2" class="min-w-12" loading="lazy">
+                <img src="<?= ASSETS_URL ?>/img/scene/scene-2.png" alt="scene-2" class="min-w-12" loading="lazy" decoding="async">
             </div>
 
             <div class="flex flex-col justify-center gap-1.5">
@@ -37,7 +37,7 @@
 
         <div class="<?= $item ?>">
             <div class="bg-[#F6FFED] <?= $itemImg ?>">
-                <img src="<?= ASSETS_URL ?>/img/scene/scene-3.svg" alt="scene-3" class="min-w-12" loading="lazy">
+                <img src="<?= ASSETS_URL ?>/img/scene/scene-3.svg" alt="scene-3" class="min-w-12" loading="lazy" decoding="async">
             </div>
 
             <div class="flex flex-col justify-center gap-1.5">
@@ -48,7 +48,7 @@
 
         <div class="<?= $item ?>">
             <div class="bg-[#EDEBF0] <?= $itemImg ?>">
-                <img src="<?= ASSETS_URL ?>/img/scene/scene-4.svg" alt="scene-4" class="min-w-12" loading="lazy">
+                <img src="<?= ASSETS_URL ?>/img/scene/scene-4.svg" alt="scene-4" class="min-w-12" loading="lazy" decoding="async">
             </div>
 
             <div class="flex flex-col justify-center gap-1.5">
