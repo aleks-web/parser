@@ -58,7 +58,7 @@
 
 
 <?php function theServicewBtn($icon, $text) { ?>
-    <div class="main-banner__service-btn min-h-10 max-h-10 flex items-center gap-2 border border-gray-500 rounded-lg max-w-max p-2 bg-[--clr-3]
+    <div class="main-banner__service-btn min-h-10 max-h-10 flex items-center gap-2 border border-gray-500 rounded-lg max-w-max p-2 bg-[#F2F6FF]
                 sm:rounded-[50px] sm:px-4">
         <img width="25" height="25" src="/assets/img/icons/services/<?= $icon ?>" loading="lazy" decoding="async" />
         <span class="text-[14px] font-bold text-gray-600 sm:sm:text-lg"><?= $text ?></span>
@@ -66,7 +66,7 @@
 <?php } ?>
 
 <?php function theServicewBtnIcon($icon) { ?>
-    <div class="main-banner__service-btn min-h-10 max-h-10 flex items-center gap-2 border border-gray-500 rounded-lg max-w-max p-2 <?= ($icon === 'allinstruments.png') ? 'bg-[#DA2127] border-0' : 'bg-[--clr-3]'; ?>
+    <div class="main-banner__service-btn min-h-10 max-h-10 flex items-center gap-2 border border-gray-500 rounded-lg max-w-max p-2 <?= ($icon === 'allinstruments.png') ? 'bg-[#DA2127] border-0' : 'bg-[#F2F6FF]'; ?>
                 sm:rounded-[50px] sm:px-4">
         <img class="<?= ($icon === 'mvideo.png') ? 'max-h-4' : 'max-h-6'; ?> min-w-max" src="/assets/img/icons/services/<?= $icon ?>" loading="lazy" decoding="async" />
     </div>

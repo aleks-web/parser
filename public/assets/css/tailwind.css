@@ -1,7 +1,5 @@
 :root {
     --main-clr: #1450D0;
-    --clr-2: #E9F0FF;
-    --clr-3: #F2F6FF;
 }
 
 @tailwind base;
@@ -33,13 +31,6 @@
 
 .page-banner {
     @apply my-[15svw] s:my-[50px] md:my-[60px] lg:my-[75px] xl:my-[85px] 2xl:my-[100px];
-}
-
-/*
-    Block what-data-collect
-*/
-.what-data-collect-tab {
-
 }
 
 @tailwind components;

@@ -1,6 +1,6 @@
 <?php
     $accordionHeader = "accordion__title flex justify-between items-center w-full text-[--main-clr] font-bold text-[22px] gap-3 leading-[22px] cursor-pointer transition-all delay-50 md:text-[25px] md:leading-[25px] xl:text-[28px] xl:leading-[28px] group-[.open]/accordion:mb-5";
-    $accordionSvg = "min-w-4 max-w-4 p-3 rounded-full box-content aspect-square transition-all ease-in delay-100 -rotate-180 text-[#5A575F] group-[.open]/accordion:bg-[--clr-2] group-[.open]/accordion:-rotate-0 group-[.open]/accordion:text-[--main-clr] xl:min-w-6 xl:max-w-6";
+    $accordionSvg = "min-w-4 max-w-4 p-3 rounded-full box-content aspect-square transition-all ease-in delay-100 -rotate-180 text-[#5A575F] group-[.open]/accordion:bg-[#E9F0FF] group-[.open]/accordion:-rotate-0 group-[.open]/accordion:text-[--main-clr] xl:min-w-6 xl:max-w-6";
     $accordionDesc = "accordion__content text-[#6F6F6F] text-[16px] leading-[20px] h-0 overflow-hidden sm:text-[17px] sm:leading-[22px] md:text-[18px] md:leading-[25px]";
 ?>
 

@@ -15,7 +15,7 @@
     <ul class="flex flex-col gap-2 mt-6 xl:mt-10">
         <?php
 
-            $classLi = 'flex flex-col text-center items-center gap-2 border-2 border-[var(--main-clr)] rounded-2xl p-2 px-4 text-[--main-clr] font-medium text-[15px] w-full bg-[--clr-3]
+            $classLi = 'flex flex-col text-center items-center gap-2 border-2 border-[var(--main-clr)] rounded-2xl p-2 px-4 text-[--main-clr] font-medium text-[15px] w-full bg-[#F2F6FF]
                         s:flex-row s:text-left
                         sm:max-w-max sm:rounded-full
                         md:text-[16px]
