@@ -1,7 +1,7 @@
 <div class="md:relative 2xl:static sm:container px-[0.5rem] page-banner">
 
 
-        <img src="<?= ASSETS_URL ?>/img/head-monitor.webp" class="hidden absolute -z-10 aspect-square
+        <img src="<?= ASSETS_URL ?>/img/head-monitor-2.webp" class="hidden absolute -z-10 aspect-square
                 md:block md:-right-[120px] md:-top-[148px] md:h-[185%]
                 lg:-right-[260px] lg:-top-[150px] lg:h-[280%]
                 xl:-right-[150px] xl:-top-[275px] xl:h-[225%]

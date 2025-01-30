@@ -18,7 +18,7 @@
 
 
 <div>
-    <img src="<?= ASSETS_URL ?>/img/head-monitor.webp" class="hidden absolute -z-10 aspect-square md:h-auto
+    <img src="<?= ASSETS_URL ?>/img/head-monitor-2.webp" class="hidden absolute -z-10 aspect-square md:h-auto
                         md:block md:-right-[180px] md:top-[95px] md:h-[800px]
                         lg:block lg:-right-[70px] lg:top-[100px] lg:h-[1000px]
                         xl:block xl:-right-[70px] xl:top-[100px] xl:h-[900px]
@@ -84,7 +84,7 @@
                         <span class="<?= $title2 ?>">Описание</span>
 
                         <div class="<?= $spanWrap ?>">
-                            <span class="<?= $spanName ?>">Louis Vuitton</span>
+                            <span class="<?= $spanName ?>">McDonald's</span>
 
                             <span class="<?= $spanDesc ?>">Спарсили более 35 000 товаров с Яндекс.Маркет</span>
                         </div>

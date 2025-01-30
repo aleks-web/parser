@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', function() {
         const header = document.getElementById('header');
-        const scrollTop = 1;
+        const scrollTop = 20;
 
         if (window.scrollY > scrollTop && header.classList.contains('header-mobile') === false) {
             header.classList.add('header-mobile');

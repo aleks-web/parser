@@ -6,7 +6,7 @@
         <div class="sm:container px-[0.5rem]">
             <div class="flex justify-between gap-4
                         md:gap-10
-                        lg:gap-16">
+                        lg:gap-14">
                 <div class="flex items-center justify-center">
                     <a href="<?= getPageUrl('main') ?>">
                         <img class="w-[12svw] min-w-6 items-center aspect-square s:min-w-10 md:w-24 lg:w-32
@@ -14,7 +14,7 @@
                     </a>
                 </div>
 
-                <div class="flex flex-col justify-center w-full
+                <div class="flex flex-col justify-center w-full gap-6 md:group-[.header-mobile]:gap-0
                             md:justify-between">
 
                     <div class="flex justify-end items-center gap-4 w-full text-sm
@@ -28,6 +28,7 @@
                             $svgIcon = "w-[7svw] aspect-square text-[inherit] s:w-7 md:w-5 lg:w-6";
                             $link = "flex items-center gap-2 text-[#5A575F] transition-all hover:text-[--main-clr] md:group-[.header-mobile]:hidden";
                         ?>
+
                         <a href="https://wa.me/<?= clearPhone($_ENV['PHONE']) ?>" class="<?= $link; ?>">
                             <svg class="<?= $svgIcon; ?>"><use xlink:href="#svg-whatsapp"></use></svg>
                             <span class="hidden md:block">Написать в WhatsApp</span>
@@ -50,9 +51,15 @@
                     </div>
 
                     <div class="hidden md:flex group-[.header-mobile]:h-[100%] group-[.header-mobile]:items-center">
-                        <ul class="flex gap-4 font-bold text-sm uppercase -ml-2 -mb-3 group-[.header-mobile]:-mb-[5px] lg:gap-16 xl:gap-32">
-                            <?php $linkClass = 'peer block hover:text-gray-600 hover:border-gray-600 border border-transparent transition-all ease-in delay-100 text-gray-600 rounded-lg min-w-max p-2
-                                                lg:text-lg lg:rounded-xl
+                        <ul class="flex gap-4 font-bold text-sm uppercase -ml-10 -mb-3 group-[.header-mobile]:-mb-[5px]
+                                   md:-ml-2
+                                   lg:gap-16 lg:-ml-4
+                                   xl:gap-32">
+
+                            <?php $linkClass = 'peer block hover:text-gray-600 hover:border-gray-600 border border-transparent transition-all ease-in delay-50 text-gray-600 rounded-lg min-w-max p-2 px-10
+                                                hover:bg-[#F2F6FF]
+                                                md:px-2
+                                                lg:text-lg lg:rounded-xl lg:px-4
                                                 xl:text-xl
                                                 has-[.active]:border-[--main-clr] has-[.active]:text-[--main-clr]'; ?>
 
@@ -62,6 +69,8 @@
                             <li><a href="<?= getPageUrl('cases') ?>" class="<?= $linkClass ?>"><span class="<?= getCurrenPage() === 'cases' ? 'active' : ''; ?>">Кейсы и отзывы</span></a></li>
                         </ul>
                     </div>
+
+
                 </div>
             </div>
 

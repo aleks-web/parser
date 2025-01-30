@@ -81,12 +81,12 @@
             </div>
 
             <div class="<?= $item ?> bg-[#FFEBF2]">
-                <span class="<?= $num ?> bg-[#F890B7] text-[#5A575F]">5</span>
+                <span class="<?= $num ?> bg-[#F890B7] text-white">6</span>
                 <img src="<?= ASSETS_URL ?>/img/reasons/5.webp" alt="num-5" class="<?= $img ?> w-24 h-24 top-4 right-4" loading="lazy" decoding="async">
 
                 <div class="mt-16">
-                    <div class="<?= $title ?>">Работаем быстро, точно, с любыми сайтами</div>
-                    <div class="<?= $desc ?>">Используем передовые технологии сбора данных, а программисты с опытом 6+ лет легко подстраивают их под любые задачи</div>
+                    <div class="<?= $title ?>">Профессионально парсим с 2019 года</div>
+                    <div class="<?= $desc ?>">Выполнили более 4700 заявок, а посмотреть кейсы, отзывы и благодарности вы можете на данной странице.</div>
                 </div>
             </div>
 
