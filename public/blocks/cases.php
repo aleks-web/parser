@@ -49,13 +49,13 @@
                             <div class="splide__track <?= $splideTrack ?>">
                                 <ul class="splide__list">
                                     <li class="splide__slide">
-                                        <img src="<?= ASSETS_URL ?>/img/photo/photo-1.jpg" class="w-full aspect-[2/1] xl:aspect-square object-cover" alt="" />
+                                        <img src="<?= ASSETS_URL ?>/img/photo/photo-1.jpg" class="w-full aspect-[2/1] xl:aspect-square object-cover" alt="photo-1" loading="lazy" />
                                     </li>
                                     <li class="splide__slide">
-                                        <img src="<?= ASSETS_URL ?>/img/photo/photo-1.jpg" class="w-full aspect-[2/1] xl:aspect-square object-cover" alt="" />
+                                        <img src="<?= ASSETS_URL ?>/img/photo/photo-1.jpg" class="w-full aspect-[2/1] xl:aspect-square object-cover" alt="photo-2" loading="lazy" />
                                     </li>
                                     <li class="splide__slide">
-                                        <img src="<?= ASSETS_URL ?>/img/photo/photo-1.jpg" class="w-full aspect-[2/1] xl:aspect-square object-cover" alt="" />
+                                        <img src="<?= ASSETS_URL ?>/img/photo/photo-1.jpg" class="w-full aspect-[2/1] xl:aspect-square object-cover" alt="photo-3" loading="lazy" />
                                     </li>
                                 </ul>
                             </div>

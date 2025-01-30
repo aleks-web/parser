@@ -68,6 +68,4 @@
             </clipPath>
         </defs>
     </svg>
-
-
 </div>

@@ -37,16 +37,16 @@
                 md:max-w-[none] md:min-w-[100%] md:-right-[120px] md:-top-[150px] md:-mb-[160px] md:aspect-square
                 lg:absolute lg:top-[50px] lg:-right-[180px] lg:max-w-[50svw] lg:min-w-[auto]
                 xl:-right-[50px] xl:-top-[50px]
-                2xl:min-w-[900px] 2xl:max-w-[900px] 2xl:w-[900px] 2xl:-top-[110px]">
+                2xl:min-w-[900px] 2xl:max-w-[900px] 2xl:w-[900px] 2xl:-top-[10px] 2xl:right-0">
 
-        <img class="w-full 2xl:min-w-[inherit] 2xl:max-w-[inherit] 2xl:w-[inherit]" src="<?= ASSETS_URL ?>/img/head-monitor.webp" alt="monitor">
+        <img class="w-full 2xl:min-w-[inherit] 2xl:max-w-[inherit] 2xl:w-[inherit]" src="<?= ASSETS_URL ?>/img/head-monitor.webp" alt="monitor" loading="lazy">
 
-        <img class="absolute top-[39%] right-[28%] w-[5%]" src="<?= ASSETS_URL ?>/img/main-banner/sber.svg" alt="sber">
-        <img class="absolute top-[42%] right-[34%] w-[7%]" src="<?= ASSETS_URL ?>/img/main-banner/mvideo.svg" alt="mvideo">
-        <img class="absolute top-[33%] right-[29%] w-[35%]" src="<?= ASSETS_URL ?>/img/main-banner/yamarket.svg" alt="yamarket">
-        <img class="absolute top-[49%] right-[53%] w-[12%]" src="<?= ASSETS_URL ?>/img/main-banner/wb.svg" alt="wb">
-        <img class="absolute top-[38%] right-[50%] w-[47%]" src="<?= ASSETS_URL ?>/img/main-banner/avito.svg" alt="avito">
-        <img class="absolute top-[49%] right-[84%] w-[25%]" src="<?= ASSETS_URL ?>/img/main-banner/ozon.svg" alt="ozon">
+        <img class="absolute top-[39%] right-[28%] w-[5%]" src="<?= ASSETS_URL ?>/img/main-banner/sber.svg" alt="sber" loading="lazy">
+        <img class="absolute top-[42%] right-[34%] w-[7%]" src="<?= ASSETS_URL ?>/img/main-banner/mvideo.svg" alt="mvideo" loading="lazy">
+        <img class="absolute top-[33%] right-[29%] w-[35%]" src="<?= ASSETS_URL ?>/img/main-banner/yamarket.svg" alt="yamarket" loading="lazy">
+        <img class="absolute top-[49%] right-[53%] w-[12%]" src="<?= ASSETS_URL ?>/img/main-banner/wb.svg" alt="wb" loading="lazy">
+        <img class="absolute top-[38%] right-[50%] w-[47%]" src="<?= ASSETS_URL ?>/img/main-banner/avito.svg" alt="avito" loading="lazy">
+        <img class="absolute top-[49%] right-[84%] w-[25%]" src="<?= ASSETS_URL ?>/img/main-banner/ozon.svg" alt="ozon" loading="lazy">
     </div>
 </div>
 
@@ -55,7 +55,7 @@
 <?php function theServicewBtn($icon, $text) { ?>
     <div class="main-banner__service-btn min-h-10 max-h-10 flex items-center gap-2 border border-gray-500 rounded-lg max-w-max p-2 bg-[--clr-3]
                 sm:rounded-[50px] sm:px-4">
-        <img width="25" height="25" src="/assets/img/icons/services/<?= $icon ?>" />
+        <img width="25" height="25" src="/assets/img/icons/services/<?= $icon ?>" loading="lazy" />
         <span class="text-[14px] font-bold text-gray-600 sm:sm:text-lg"><?= $text ?></span>
     </div>
 <?php } ?>
@@ -63,6 +63,6 @@
 <?php function theServicewBtnIcon($icon) { ?>
     <div class="main-banner__service-btn min-h-10 max-h-10 flex items-center gap-2 border border-gray-500 rounded-lg max-w-max p-2 <?= ($icon === 'allinstruments.png') ? 'bg-[#DA2127] border-0' : 'bg-[--clr-3]'; ?>
                 sm:rounded-[50px] sm:px-4">
-        <img class="<?= ($icon === 'mvideo.png') ? 'max-h-4' : 'max-h-6'; ?> min-w-max" src="/assets/img/icons/services/<?= $icon ?>" />
+        <img class="<?= ($icon === 'mvideo.png') ? 'max-h-4' : 'max-h-6'; ?> min-w-max" src="/assets/img/icons/services/<?= $icon ?>" loading="lazy" />
     </div>
 <?php } ?>

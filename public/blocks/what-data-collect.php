@@ -73,7 +73,7 @@
                                        hover:border hover:border-[#D9D9D9]
                                        <?= !$key ? 'active' : ''; ?>">
 
-        <img class="lg:h-[53px] 2xl:h-[63px] <?= !($key % 2) ? 'even' : ''; ?>" src="./assets/img/what-data-collect/icons/<?= $icon ?>.svg" />
+        <img class="lg:h-[53px] 2xl:h-[63px] <?= !($key % 2) ? 'even' : ''; ?>" src="<?= ASSETS_URL ?>/img/what-data-collect/icons/<?= $icon ?>.svg" loading="lazy" />
         <?= $text ?>
     </div>
 </div>
@@ -81,7 +81,7 @@
 
 <?php function getDataImageTab($ar, $key = null) { ?>
     <li class="splide__slide">
-        <img data-content-id="<?= $key ?>" class="what-data-collect-content w-full xl:mt-0" src="./assets/img/what-data-collect/<?= $ar['image'] ?>" alt="<?= $ar['name'] ?>">
+        <img data-content-id="<?= $key ?>" class="what-data-collect-content w-full xl:mt-0" src="<?= ASSETS_URL ?>/img/what-data-collect/<?= $ar['image'] ?>" alt="<?= $ar['name'] ?>" loading="lazy">
     </li>
 <?php } ?>
 

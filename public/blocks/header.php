@@ -1,7 +1,7 @@
-<div id="header" class="group w-full fixed top-0 left-0 z-40 bg-[#F2F6FF] md:bg-[none]">
+<div id="header" class="group w-full fixed top-0 left-0 z-40 bg-[#F2F6FF] md:bg-[unset]">
     <div class="my-4 w-full
                 sm:my-6 xl:my-10
-                group-[.header-mobile]:py-4 group-[.header-mobile]:my-0 group-[.header-mobile]:bg-white group-[.header-mobile]:shadow-md group-[.header-mobile]:shadow-[#F2F6FF] transition-all ease-out">
+                group-[.header-mobile]:py-4 group-[.header-mobile]:my-0 group-[.header-mobile]:bg-[#F2F6FF] group-[.header-mobile]:shadow-md group-[.header-mobile]:shadow-[#F2F6FF] transition-all ease-out">
 
         <div class="sm:container px-[0.5rem]">
             <div class="flex justify-between gap-4
@@ -10,7 +10,7 @@
                 <div class="flex items-center justify-center">
                     <a href="<?= getPageUrl('main') ?>">
                         <img class="w-[12svw] min-w-6 items-center aspect-square s:min-w-10 md:w-24 lg:w-32
-                                    md:group-[.header-mobile]:w-14" src="<?= ASSETS_URL; ?>/img/logo.svg" alt="logo">
+                                    md:group-[.header-mobile]:w-14" src="<?= ASSETS_URL; ?>/img/logo.svg" alt="logo" loading="lazy">
                     </a>
                 </div>
 

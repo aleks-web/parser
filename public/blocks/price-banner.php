@@ -6,7 +6,7 @@
                 lg:-right-[260px] lg:-top-[150px] lg:h-[280%]
                 xl:-right-[150px] xl:-top-[275px] xl:h-[225%]
                 2xl:right-0 2xl:-top-[40px] 2xl:h-[70%]
-                ">
+                " loading="lazy">
 
     <h1 class="flex flex-col relative z-20">
         <span class="title-blue">Стоимость парсинга сайтов</span>

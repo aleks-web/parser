@@ -3,7 +3,7 @@
                 lg:block lg:-right-[260px] lg:-top-[200px] lg:h-[700px]
                 xl:-right-[260px] xl:-top-[30px] xl:h-[700px]
                 2xl:right-0 2xl:top-[120px] 2xl:h-[900px]
-                ">
+                " loading="lazy">
 
     <div class="gsap-block sm:container my-10 s:px-[0.5rem] lg:my-16 xl:max-w-[1536px] 2xl:static 2xl:my-20 2xl:mb-32 relative z-20">
 

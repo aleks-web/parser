@@ -1,5 +1,5 @@
 {
-  "name": "glonavt_montage_crm_gulp",
+  "name": "parsing-data",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -13,12 +13,6 @@
   "devDependencies": {
     "browser-sync": "^3.0.2",
     "gulp": "^4.0.2",
-    "gulp-concat": "^2.6.1",
-    "gulp-file-include": "^2.3.0",
-    "gulp-sass": "^5.1.0",
-    "gulp-sass-glob": "^1.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "sass": "^1.70.0",
     "tailwindcss": "^3.4.17"
   }
 }

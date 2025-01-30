@@ -21,7 +21,7 @@
         <div class="grid-reasons grid gap-4">
 
             <div class="<?= $item ?> bg-[#F2F6FF]">
-                <img src="<?= ASSETS_URL ?>/img/reasons/1.svg" alt="num-1" class="<?= $img ?>">
+                <img src="<?= ASSETS_URL ?>/img/reasons/1.svg" alt="num-1" class="<?= $img ?>" loading="lazy">
                 <span class="<?= $num ?> bg-[#1450D0] text-white">1</span>
 
                 <div class="mt-24 xl:mt-0">
@@ -33,7 +33,7 @@
 
             <div class="<?= $item ?> bg-[#EDEBF0]">
                 <span class="<?= $num ?> bg-white text-[#5A575F]">2</span>
-                <img src="<?= ASSETS_URL ?>/img/reasons/2.svg" alt="num-2" class="<?= $img ?>">
+                <img src="<?= ASSETS_URL ?>/img/reasons/2.svg" alt="num-2" class="<?= $img ?>" loading="lazy">
 
                 <div class="mt-20">
                     <div class="<?= $title ?>">Результат в нужном вам формате</div>
@@ -46,11 +46,11 @@
                 <div class="flex flex-wrap gap-5 items-center justify-center w-full relative z-10 s:justify-between">
                     <span class="<?= $num ?> bg-[#5A575F] text-white">3</span>
                     <div class="flex flex-wrap items-center justify-center gap-5">
-                        <img src="<?= ASSETS_URL ?>/img/reasons/pay/MasterCard.svg" alt="MasterCard">
-                        <img src="<?= ASSETS_URL ?>/img/reasons/pay/Visa.svg" alt="Visa">
-                        <img src="<?= ASSETS_URL ?>/img/reasons/pay/Mir.svg" alt="Mir">
-                        <img src="<?= ASSETS_URL ?>/img/reasons/pay/sberpay.svg" alt="sberpay">
-                        <img src="<?= ASSETS_URL ?>/img/reasons/pay/sbp.svg" alt="sbp">
+                        <img src="<?= ASSETS_URL ?>/img/reasons/pay/MasterCard.svg" alt="MasterCard" loading="lazy">
+                        <img src="<?= ASSETS_URL ?>/img/reasons/pay/Visa.svg" alt="Visa" loading="lazy">
+                        <img src="<?= ASSETS_URL ?>/img/reasons/pay/Mir.svg" alt="Mir" loading="lazy">
+                        <img src="<?= ASSETS_URL ?>/img/reasons/pay/sberpay.svg" alt="sberpay" loading="lazy">
+                        <img src="<?= ASSETS_URL ?>/img/reasons/pay/sbp.svg" alt="sbp" loading="lazy">
                     </div>
                 </div>
 
@@ -62,7 +62,7 @@
 
             <div class="<?= $item ?> bg-[#FFEFC3]">
                 <span class="<?= $num ?> bg-[#FBC42E] text-[#5A575F]">4</span>
-                <img src="<?= ASSETS_URL ?>/img/reasons/3.svg" alt="num-4" class="<?= $img ?>">
+                <img src="<?= ASSETS_URL ?>/img/reasons/3.svg" alt="num-4" class="<?= $img ?>" loading="lazy">
 
                 <div class="mt-24">
                     <div class="<?= $title ?>">Работа по договору</div>
@@ -72,7 +72,7 @@
 
             <div class="<?= $item ?> bg-[#E0FFED]">
                 <span class="<?= $num ?> bg-[#64D795] text-[#5A575F]">5</span>
-                <img src="<?= ASSETS_URL ?>/img/reasons/4.svg" alt="num-5" class="<?= $img ?>">
+                <img src="<?= ASSETS_URL ?>/img/reasons/4.svg" alt="num-5" class="<?= $img ?>" loading="lazy">
 
                 <div class="mt-16">
                     <div class="<?= $title ?>">Работаем быстро, точно, с любыми сайтами</div>
@@ -82,7 +82,7 @@
 
             <div class="<?= $item ?> bg-[#FFEBF2]">
                 <span class="<?= $num ?> bg-[#F890B7] text-[#5A575F]">5</span>
-                <img src="<?= ASSETS_URL ?>/img/reasons/5.webp" alt="num-5" class="<?= $img ?> w-24 h-24 top-4 right-4">
+                <img src="<?= ASSETS_URL ?>/img/reasons/5.webp" alt="num-5" class="<?= $img ?> w-24 h-24 top-4 right-4" loading="lazy">
 
                 <div class="mt-16">
                     <div class="<?= $title ?>">Работаем быстро, точно, с любыми сайтами</div>
@@ -91,7 +91,7 @@
             </div>
 
             <div class="<?= $item ?> border-2 border-[#286CFD] flex items-center justify-center">
-                <img src="<?= ASSETS_URL ?>/img/reasons/empty-logo.png" class="w-[200px]" alt="empty-logo">
+                <img src="<?= ASSETS_URL ?>/img/reasons/empty-logo.png" class="w-[200px]" alt="empty-logo" loading="lazy">
             </div>
 
         </div>
