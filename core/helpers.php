@@ -91,6 +91,6 @@ function getPageUrl(string $pageName) : string|null {
 }
 
 function clearPhone ($phone) {
-    return str_replace([' ', '(', ')', '-'], '', $_ENV['PHONE']);
+    return str_replace([' ', '(', ')', '-'], '', $phone);
 }
 ?>

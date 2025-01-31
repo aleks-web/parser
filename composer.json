@@ -3,7 +3,10 @@
     "autoload": {
         "psr-4": {
             "Alex\\Parser\\": "src/"
-        }
+        },
+        "files": [
+            "core/Bitrix24/CRest.php"
+        ]
     },
     "authors": [
         {

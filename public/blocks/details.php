@@ -60,7 +60,7 @@
 
             <div class="flex flex-col justify-center">
                 <span class="text-[#5A575F] text-xs xl:text-lg xl:leading-6">ТЕЛЕФОН</span>
-                <span class="text-[#5A575F] text-sm font-bold sm:text-lg xl:text-2xl xl:leading-6"><?= $_ENV['PHONE']; ?></span>
+                <a href="tel:<?= clearPhone($_ENV['PHONE']); ?>" class="text-[#5A575F] text-sm font-bold sm:text-lg xl:text-2xl xl:leading-6 hover:text-[--main-clr] transition-all"><?= $_ENV['PHONE']; ?></a>
             </div>
         </div>
 
@@ -69,7 +69,7 @@
 
             <div class="flex flex-col justify-center">
                 <span class="text-[#5A575F] text-xs xl:text-lg xl:leading-6">ПОЧТА</span>
-                <span class="text-[#5A575F] text-sm font-bold sm:text-lg xl:text-2xl xl:leading-6"><?= $_ENV['EMAIL']; ?></span>
+                <a href="mailto:<?= $_ENV['EMAIL']; ?>" class="text-[#5A575F] text-sm font-bold sm:text-lg xl:text-2xl xl:leading-6 hover:text-[--main-clr] transition-all"><?= $_ENV['EMAIL']; ?></a>
             </div>
         </div>
 

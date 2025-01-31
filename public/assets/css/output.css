@@ -1124,6 +1124,10 @@ body {
   min-height: 2.5rem;
 }
 
+.min-h-\[100px\] {
+  min-height: 100px;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -2243,6 +2247,10 @@ body {
   border-color: var(--main-clr);
 }
 
+.has-\[\.form-sent\]\:p-20:has(.form-sent) {
+  padding: 5rem;
+}
+
 .has-\[\.active\]\:text-\[--main-clr\]:has(.active) {
   color: var(--main-clr);
 }
@@ -2278,6 +2286,16 @@ body {
 
 .group\/checkbox:has(input:checked) .group-has-\[input\:checked\]\/checkbox\:text-\[--main-clr\] {
   color: var(--main-clr);
+}
+
+.group:has(.error) .group-has-\[\.error\]\:placeholder-\[\#d13a32\]::-moz-placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(209 58 50 / var(--tw-placeholder-opacity, 1));
+}
+
+.group:has(.error) .group-has-\[\.error\]\:placeholder-\[\#d13a32\]::placeholder {
+  --tw-placeholder-opacity: 1;
+  color: rgb(209 58 50 / var(--tw-placeholder-opacity, 1));
 }
 
 @media (min-width: 320px) {

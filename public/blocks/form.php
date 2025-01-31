@@ -1,6 +1,11 @@
-﻿<div class="gsap-block sm:container my-10 s:px-[0.5rem] lg:my-16 xl:max-w-[1536px] 2xl:static 2xl:my-20 2xl:mb-32 relative z-20">
+<?php
+
+?>
+
+<div class="gsap-block sm:container my-10 s:px-[0.5rem] lg:my-16 xl:max-w-[1536px] 2xl:static 2xl:my-20 2xl:mb-32 relative z-20">
 
     <div class="bg-white p-3 rounded-xl relative z-20 sm:p-6 xl:p-10">
+
         <div class="mb-5 text-center text-[18px] uppercase text-[#1450D0] font-bold italic break-all
                 s:text-[22px]
                 sm:text-[28px]
@@ -12,7 +17,8 @@
         <form method="POST">
             <?php
             $label = "text-[#1450D0] font-bold text-[14px] mb-[5px] block sm:text-[16px] xl:text-[18px] group-has-[.error]:text-[#d13a32] group-has-[.success]:text-[#259525]";
-            $input = "border border-[#D9D9D9] outline-none py-1 pl-4 rounded-[20px] text-[14px] w-full text-[#1450D0] group-has-[.error]:text-[#d13a32] group-has-[.error]:border-[#d13a32] group-has-[.success]:border-[#259525] group-has-[.success]:text-[#259525]
+            $input = "border border-[#D9D9D9] outline-none py-1 pl-4 rounded-[20px] text-[14px] w-full text-[#1450D0]
+                      group-has-[.error]:text-[#d13a32] group-has-[.error]:border-[#d13a32] group-has-[.success]:border-[#259525] group-has-[.success]:text-[#259525] group-has-[.error]:placeholder-[#d13a32]
                       s:text-[16px]
                       md:py-2
                       lg:pl-6
@@ -33,7 +39,7 @@
 
                 <div class="w-full group">
                     <span class="<?= $label ?>">Введите E-mail *</span>
-                    <input class="<?= $input ?>" type="text" name="email" placeholder="E-mail">
+                    <input class="<?= $input ?>" type="email" name="email" placeholder="E-mail">
                 </div>
             </div>
 
@@ -70,9 +76,9 @@
             </div>
 
             <div class="flex flex-col-reverse gap-6 mt-3">
-                <div>
+                <div class="group">
                     <span class="<?= $label ?>">Какие данные нужно собирать?*</span>
-                    <textarea class="<?= $input ?> pl-2 rounded-lg text-[13px] s:text-[16px] s:rounded-[16px] lg:rounded-[20px]" rows="5" placeholder="Например: текст, изображения, описание товаров, характеристики"></textarea>
+                    <textarea class="<?= $input ?> pl-2 rounded-lg text-[13px] s:text-[16px] s:rounded-[16px] lg:rounded-[20px] min-h-[100px]" rows="5" name="message" placeholder="Например: текст, изображения, описание товаров, характеристики"></textarea>
                 </div>
 
                 <div class="mt-6 bg-[#F2F6FF] rounded-lg p-4 text-center break-all flex flex-col items-center s:rounded-[16px] md:p-6 lg:rounded-[20px]">
@@ -120,6 +126,7 @@
 
 <script>
     const form = document.querySelector('form');
+    const fields = form.querySelectorAll('[name="username"], [name="phone"], [name="email"], [name="message"]');
     const phoneInputNode = form.querySelector('[name="phone"]');
 
 
@@ -129,13 +136,7 @@
         commit: (text) => {
 
             if (isFirstInput >= 2) {
-                if (text.length === 18) {
-                    phoneInputNode.classList.remove('error');
-                    phoneInputNode.classList.add('success');
-                } else {
-                    phoneInputNode.classList.remove('success');
-                    phoneInputNode.classList.add('error');
-                }
+                checkLengthField(phoneInputNode, 17);
             } else {
                 isFirstInput++;
             }
@@ -144,13 +145,60 @@
 
     form.addEventListener('submit', function(event) {
         event.preventDefault();
-        const formData = new FormData(this);
+        checkFormFields();
+        const errors = form.querySelectorAll('.error');
 
-        const formObject = {};
+        if (errors.length > 0) {
+            window.scrollTo(0, errors[0].offsetTop);
+            return;
+        }
+        let formObject = getFormObject(this);
+
+        fetch('/pages/order-parsing/handleForm.php', {
+            method: 'POST',
+            body: JSON.stringify(getFormObject(this))
+        }).then(r => { return r.json() }).then(r => {
+            if (r.success) {
+                form.parentNode.parentNode.classList.add('sent');
+            }
+        });
+    });
+
+    function getFormObject(form) {
+        const formData = new FormData(form);
+
+        let formObject = {};
         formData.forEach((value, key) => {
             formObject[key] = value;
         });
 
-        console.log(formObject);
+        return formObject;
+    }
+
+
+
+    function checkFormFields() {
+        mask.updateValue();
+        let username = form.querySelector('[name="username"]');
+        let email = form.querySelector('[name="email"]');
+        let message = form.querySelector('[name="message"]');
+
+        checkLengthField(username);
+        checkLengthField(email);
+        checkLengthField(message, 20);
+    }
+
+    function checkLengthField(inputNode, length = 0) {
+        if (inputNode.value.length <= length) {
+            inputNode.classList.add('error');
+            inputNode.classList.remove('success');
+        } else {
+            inputNode.classList.remove('error');
+            inputNode.classList.add('success');
+        }
+    }
+
+    fields.forEach(inputField => {
+        inputField.addEventListener('keyup', () => { checkFormFields(); })
     });
 </script>
