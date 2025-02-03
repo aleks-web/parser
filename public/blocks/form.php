@@ -4,7 +4,7 @@
 
 <div class="gsap-block sm:container my-10 s:px-[0.5rem] lg:my-16 xl:max-w-[1536px] 2xl:static 2xl:my-20 2xl:mb-32 relative z-20">
 
-    <div class="bg-white p-3 rounded-xl relative z-20 sm:p-6 xl:p-10">
+    <div class="main-form bg-white p-3 rounded-xl relative z-20 sm:p-6 xl:p-10">
 
         <div class="mb-5 text-center text-[18px] uppercase text-[#1450D0] font-bold italic break-all
                 s:text-[22px]
@@ -56,8 +56,8 @@
 
                         <div class="group/checkbox checkbox flex items-center gap-3 text-[#5A575F] break-all cursor-pointer">
                             <div class="<?= $checkClass ?>">
-                                <input class="absolute w-full h-full left-0 right-0 opacity-0" type="checkbox" value="period" checked>
-                                <div class="aspect-square w-[14px] bg-white rounded-full xl:w-[16px]"></div>
+                                <input class="absolute w-full h-full left-0 right-0 opacity-0 cursor-pointer" type="checkbox" value="period" checked>
+                                <div class="aspect-square w-[14px] bg-white rounded-full xl:w-[16px] transition-all"></div>
                             </div>
 
                             <span class="group-has-[input:checked]/checkbox:text-[--main-clr] text-[14px] s:text-[16px] xl:text-[20px]">Периодический</span>
@@ -65,8 +65,8 @@
 
                         <div class="group/checkbox checkbox flex items-center gap-3 text-[#5A575F] break-all cursor-pointer">
                             <div class="<?= $checkClass ?>">
-                                <input class="absolute w-full h-full left-0 right-0 opacity-0" type="checkbox" value="raz">
-                                <div class="aspect-square w-[14px] bg-white rounded-full xl:w-[16px]"></div>
+                                <input class="absolute w-full h-full left-0 right-0 opacity-0 cursor-pointer" type="checkbox" value="raz">
+                                <div class="aspect-square w-[14px] bg-white rounded-full xl:w-[16px] transition-all"></div>
                             </div>
 
                             <span class="group-has-[input:checked]/checkbox:text-[--main-clr] text-[14px] s:text-[16px] xl:text-[20px]">Разовый</span>
@@ -122,6 +122,14 @@
         </form>
 
     </div>
+
+    <div class="main-form-success flex-col items-center justify-center p-5 bg-white my-[20svh] rounded-[20px] max-w-max mx-auto hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 16 16" class="p-2 rounded-full border-2 border-[#44bf44] fill-[#44bf44]">
+            <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
+        </svg>
+
+        <div class="mt-5 text-[20px]">Ваше сообщение успешно отправлено!</div>
+    </div>
 </div>
 
 <script>
@@ -152,14 +160,15 @@
             window.scrollTo(0, errors[0].offsetTop);
             return;
         }
-        let formObject = getFormObject(this);
 
         fetch('/pages/order-parsing/handleForm.php', {
             method: 'POST',
             body: JSON.stringify(getFormObject(this))
-        }).then(r => { return r.json() }).then(r => {
+        }).then(r => { return r.text() }).then(r => {
             if (r.success) {
-                form.parentNode.parentNode.classList.add('sent');
+                document.querySelector('.main-form').style.display = 'none';
+                document.querySelector('.main-form-success').style.display = 'flex';
+                window.scrollTo(0, document.querySelector('.main-form-success').offsetTop);
             }
         });
     });

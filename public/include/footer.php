@@ -1,4 +1,4 @@
-<div class="wrap flex gsap-block relative z-20">
+<div class="wrap flex relative z-20">
     <div class="bg-[--main-clr] w-full flex-1"></div>
 
     <div class="sm:container mx-auto flex flex-col sm:flex-row sm:px-0">

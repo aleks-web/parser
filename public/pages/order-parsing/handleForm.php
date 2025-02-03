@@ -1,5 +1,9 @@
 <?php
 
+if ($_SERVER["REQUEST_METHOD"] == "GET") {
+    header('Location: /pages/order-parsing/index.php');
+}
+
 include_once __DIR__ . "/../../../core/bootstrap.php";
 
 function addClient(string $name, ?string $email = null, ?string $phone = null) {
@@ -26,12 +30,16 @@ function getClientId(string $name, ?string $email = null, ?string $phone = null)
                 "entity_type" => "CONTACT",
                 "type"=>"EMAIL",
                 "values"=>[$email],
-            ])['result'];
+            ]);
+
             if(!empty($withEmail)) {
                 return array_pop($withEmail['CONTACT']);
+            } else {
+                throw new Exception('can`t find by email');
             }
+        } else {
+            throw new Exception('email is null');
         }
-        throw new Exception('can`t find by email');
     } catch (Throwable $e) {
         try {
             if($phone) {
@@ -40,8 +48,11 @@ function getClientId(string $name, ?string $email = null, ?string $phone = null)
                     "type"=>"PHONE",
                     "values"=>[$phone],
                 ])['result'];
+
                 if(!empty($withPhone)) {
                     return array_pop($withPhone['CONTACT']);
+                } else {
+                    throw new Exception('can`t find by phone');
                 }
             }
         } catch (Throwable $e) {
@@ -70,6 +81,10 @@ function deleteLead(int $id) {
     return CRest::call("crm.lead.delete", ['id' => $id]);
 }
 
+function deleteContact(int $id) {
+    return CRest::call("crm.contact.delete", ['id' => $id]);
+}
+
 
 
 
@@ -78,7 +93,10 @@ function deleteLead(int $id) {
  * */
 $json = file_get_contents('php://input');
 $arFormData = json_decode($json, true);
+$arFormData['phone'] = clearPhone($arFormData['phone']);
 
+// print_r(deleteContact(522331));
+// print_r(deleteLead(638225));
 
 $inputList = ['username', 'phone', 'message', 'data-collect', 'email'];
 $errors = [];
@@ -103,9 +121,8 @@ foreach ($inputList as $input) {
 
 
 if (count($errors) > 0) {
-    echo json_encode([ 'success' => false, 'errors' => $errors ]);
+    //echo json_encode([ 'success' => false, 'errors' => $errors ]);
 } else {
     //$result = addLead($arFormData);
-    $result = ['test' => true];
-    echo json_encode([ 'success' => true, 'data' => $result ]);
+    //echo json_encode([ 'success' => true, 'data' => $result ]);
 }

@@ -944,6 +944,46 @@ body {
   margin-bottom: 1.5rem;
 }
 
+.my-\[100px\] {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.my-\[150px\] {
+  margin-top: 150px;
+  margin-bottom: 150px;
+}
+
+.my-\[200px\] {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.my-\[100svh\] {
+  margin-top: 100svh;
+  margin-bottom: 100svh;
+}
+
+.my-\[30svh\] {
+  margin-top: 30svh;
+  margin-bottom: 30svh;
+}
+
+.my-\[20svh\] {
+  margin-top: 20svh;
+  margin-bottom: 20svh;
+}
+
+.my-\[10svh\] {
+  margin-top: 10svh;
+  margin-bottom: 10svh;
+}
+
+.my-\[15svh\] {
+  margin-top: 15svh;
+  margin-bottom: 15svh;
+}
+
 .-mb-3 {
   margin-bottom: -0.75rem;
 }
@@ -1046,6 +1086,10 @@ body {
 
 .mt-\[45px\] {
   margin-top: 45px;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
 }
 
 .box-content {
@@ -1534,6 +1578,21 @@ body {
   border-color: transparent;
 }
 
+.border-\[green\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 128 0 / var(--tw-border-opacity, 1));
+}
+
+.border-\[\#58e258\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(88 226 88 / var(--tw-border-opacity, 1));
+}
+
+.border-\[\#44bf44\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(68 191 68 / var(--tw-border-opacity, 1));
+}
+
 .bg-\[\#1450D0\] {
   --tw-bg-opacity: 1;
   background-color: rgb(20 80 208 / var(--tw-bg-opacity, 1));
@@ -1639,6 +1698,19 @@ body {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[red\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
+}
+
+.fill-\[\#58e258\] {
+  fill: #58e258;
+}
+
+.fill-\[\#44bf44\] {
+  fill: #44bf44;
 }
 
 .object-cover {
@@ -2247,10 +2319,6 @@ body {
   border-color: var(--main-clr);
 }
 
-.has-\[\.form-sent\]\:p-20:has(.form-sent) {
-  padding: 5rem;
-}
-
 .has-\[\.active\]\:text-\[--main-clr\]:has(.active) {
   color: var(--main-clr);
 }
@@ -2272,6 +2340,11 @@ body {
 .group\/checkbox:has(input:checked) .group-has-\[input\:checked\]\/checkbox\:bg-\[\#1450D0\] {
   --tw-bg-opacity: 1;
   background-color: rgb(20 80 208 / var(--tw-bg-opacity, 1));
+}
+
+.group:has(.sent) .group-has-\[\.sent\]\:bg-\[red\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .group:has(.error) .group-has-\[\.error\]\:text-\[\#d13a32\] {
